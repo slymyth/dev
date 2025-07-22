@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotlight Agency</title>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ADD8E6;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: #000000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.15);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .header:hover {
+            transform: translateY(-2px);
+            background-color: rgba(0, 0, 0, 0.95);
+        }
+
+        /* Centered Logo with Scale and Glow Effect */
+        .logo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .logo img {
+            height: 50px;
+            transition: transform 0.6s ease, box-shadow 0.6s ease;
+        }
+        .logo img:hover {
+            transform: rotate(360deg) scale(1.15);
+            box-shadow: 0px 0px 20px rgba(173, 216, 230, 0.6);
+        }
+
+        /* Navigation Menu */
+        .nav-menu {
+            display: flex;
+            flex: 2;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .nav-menu a {
+            font-size: 18px;
+            color: #ADD8E6;
+            padding: 5px 10px;
+            text-decoration: none; /* Remove underline */
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .nav-menu a:hover {
+            color: #FFA07A;
+            transform: scale(1.05) translateY(-2px);
+        }
+
+        /* Get Started Button */
+        .get-started {
+            background-color: #ADD8E6;
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s ease;
+            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.5);
+        }
+        .get-started:hover {
+            background-color: #FFA07A;
+            color: #000;
+            transform: translateY(-4px);
+            box-shadow: 0px 8px 30px rgba(255, 160, 122, 0.7);
+        }
+
+        /* Mobile Toggle Menu */
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            color: #ADD8E6;
+            cursor: pointer;
+        }
+
+        /* Responsive Header */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.95);
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 15px;
+                border-radius: 0 0 8px 8px;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+                flex: 1;
+                justify-content: flex-start;
+            }
+            .logo {
+                order: 1;
+                flex: 2;
+                justify-content: center;
+            }
+            .get-started {
+                order: 3;
+                justify-content: flex-end;
+            }
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #000000;
+            padding: 50px 20px;
+            color: #ADD8E6;
+            text-align: center;
+            border-top: 1px solid rgba(173, 216, 230, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            font-size: 1.1em;
+            text-decoration: none; /* Remove underline */
+            color: #ADD8E6;
+            position: relative;
+            transition: color 0.3s, transform 0.3s;
+            padding: 5px;
+        }
+        .footer-links a:hover {
+            color: #FFA07A;
+            transform: scale(1.1);
+        }
+
+        /* Social Icons with Glow and Scale Effect */
+        .social-icons {
+            margin: 30px 0;
+        }
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 24px;
+            color: #ADD8E6;
+            text-decoration: none; /* Remove underline */
+            transition: transform 0.3s, color 0.3s, box-shadow 0.3s ease;
+            padding: 12px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 6px 20px rgba(173, 216, 230, 0.4);
+        }
+        .social-icons a:hover {
+            color: #FFA07A;
+            transform: scale(1.3);
+            box-shadow: 0px 10px 30px rgba(255, 160, 122, 0.7);
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div> <!-- Toggle Menu Icon on Left -->
+    <div class="logo">
+        <img src="/img/logo.png" alt="Logo"> <!-- Centered Logo -->
+    </div>
+    <nav class="nav-menu" id="navMenu">
+        <a href="/index.html">Home</a>
+        <a href="/service.html">Services</a>
+        <a href="/pastwork.html">Portfolio</a>
+        <a href="/about.html">About Us</a>
+        <a href="/checker.html">Website Analyzer</a>
+        <a href="/start.html">Contact</a>
+    </nav>
+    <a href="/start.html" class="get-started">Get Started</a> <!-- "Get Started" Button on Right -->
+</header>
+
+
+    <!-- Breadcrumb Navigation Section -->
+<section class="breadcrumb-section">
+    <nav class="breadcrumb">
+        <a href="/index.html"> Home</a> &gt; <a href="/service.html"> Services</a> &gt;
+        <span class="current">Mobile App Development</span>
+    </nav>
+</section>
+
+<style>
+    /* Breadcrumb Section Styling */
+    .breadcrumb-section {
+        padding: 20px 40px;
+        background-color: #000000; /* Dark background to match the site's theme */
+        box-shadow: 0 4px 15px rgba(173, 216, 230, 0.2); /* Subtle shadow for depth */
+    }
+
+    /* Breadcrumb Navigation Styling */
+    .breadcrumb {
+        display: flex;
+        align-items: center;
+        font-size: 1.1em;
+        color: #ADD8E6; /* Light blue color to match the theme */
+    }
+
+    .breadcrumb a {
+        color: #ADD8E6;
+        text-decoration: none;
+        position: relative;
+        margin-right: 10px;
+        transition: color 0.3s ease;
+    }
+
+    /* Hover Effect for Breadcrumb Links */
+    .breadcrumb a:hover {
+        color: #FFA07A; /* Orange hover effect */
+    }
+
+    .breadcrumb a:hover::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #FFA07A; /* Underline hover effect */
+    }
+
+    /* Styling for Current Page */
+    .breadcrumb .current {
+        color: #FFA07A;
+        font-weight: bold;
+    }
+</style>
+
+
+
+
+    <!-- Hero Section for Service Preview Page -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>Service Name</h1>
+        <p>Discover the benefits and features of our service designed to elevate your business to new heights.</p>
+        <a href="#learn-more" class="cta-button">GET STARTED</a>
+    </div>
+</section>
+
+<style>
+    /* Hero Section Styling */
+    .hero-section {
+        background: url('https://via.placeholder.com/1920x1080') no-repeat center center / cover;
+        position: relative;
+        padding: 150px 20px;
+        text-align: center;
+        color: #ffffff;
+        overflow: hidden;
+    }
+
+    /* Overlay Effect */
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        z-index: 1;
+    }
+
+    /* Hero Content */
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
+        margin: 0 auto;
+        color: #ADD8E6;
+    }
+
+    /* Hero Title */
+    .hero-content h1 {
+        font-size: 4em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-shadow: 0px 0px 20px rgba(173, 216, 230, 0.8), 0px 0px 40px rgba(255, 160, 122, 0.6);
+        animation: fadeInDown 1.5s ease-in-out;
+    }
+
+    /* Hero Description */
+    .hero-content p {
+        font-size: 1.5em;
+        margin-bottom: 30px;
+        line-height: 1.6;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Call-to-Action Button */
+    .cta-button {
+        display: inline-block;
+        padding: 15px 40px;
+        background-color: #FFA500; /* Bright CTA color */
+        color: #000;
+        font-size: 1.2em;
+        font-weight: bold;
+        border-radius: 50px;
+        text-transform: uppercase;
+        box-shadow: 0px 10px 20px rgba(255, 165, 0, 0.6);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .cta-button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 15px 30px rgba(255, 215, 135, 0.8);
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .hero-content h1 {
+            font-size: 3em;
+        }
+        .hero-content p {
+            font-size: 1.2em;
+        }
+        .cta-button {
+            font-size: 1em;
+            padding: 10px 30px;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Ultra-Advanced Service Preview Section -->
+<section class="service-preview-section">
+    <div class="service-image">
+        <img src="https://via.placeholder.com/800x600" alt="Service Image">
+    </div>
+    <div class="service-content">
+        <div class="service-info">
+            <h1>Our Premium Service</h1>
+            <p class="tagline">Your pathway to success, crafted for growth.</p>
+            <p class="description">Unlock your business's potential with our exclusive, high-end service. Designed with innovation and efficiency in mind, we tailor each solution to meet your needs.</p>
+            <div class="price-duration">
+                <p class="price"><strong>Price:</strong> $299</p>
+                <p class="duration"><strong>Duration:</strong> 3 Months</p>
+            </div>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Service Features and Benefits -->
+    <div class="service-details">
+        <div class="features-section">
+            <h2>Key Features</h2>
+            <ul class="features-list">
+                <li><span class="icon">✔</span> Customized Strategy</li>
+                <li><span class="icon">✔</span> 24/7 Support</li>
+                <li><span class="icon">✔</span> Scalable Solutions</li>
+                <li><span class="icon">✔</span> Data-Driven Insights</li>
+                <li><span class="icon">✔</span> Monthly Reports</li>
+            </ul>
+        </div>
+        <div class="benefits-section">
+            <h2>Benefits</h2>
+            <ul class="benefits-list">
+                <li>Drive measurable results with a tailored approach.</li>
+                <li>Gain a competitive advantage with industry insights.</li>
+                <li>Enhance customer experience through strategic improvements.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Service Reviews Section -->
+    <div class="reviews-section">
+        <h2>Client Testimonials</h2>
+        <div class="reviews-container">
+            <div class="review">
+                <p>"Exceptional service that exceeded expectations!"</p>
+                <p class="reviewer">– Sarah W.</p>
+            </div>
+            <div class="review">
+                <p>"A transformative experience. Highly recommended."</p>
+                <p class="reviewer">– Michael B.</p>
+            </div>
+            <div class="review">
+                <p>"Professional, insightful, and results-driven."</p>
+                <p class="reviewer">– Emily R.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Service Preview Section */
+    .service-preview-section {
+        padding: 100px 0;
+        background-color: #000000;
+        color: #ADD8E6;
+    }
+
+    /* Full-Width Service Image */
+    .service-image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .service-image img {
+        width: 80%;
+        max-width: 1200px;
+        border-radius: 15px;
+        box-shadow: 0px 20px 40px rgba(173, 216, 230, 0.5);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .service-image img:hover {
+        transform: scale(1.03);
+        box-shadow: 0px 25px 50px rgba(173, 216, 230, 0.6);
+    }
+
+    /* Service Info */
+    .service-content {
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    .service-info {
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .service-info h1 {
+        font-size: 3.5em;
+        color: #FFA07A;
+        margin-bottom: 15px;
+        animation: fadeIn 1.5s ease;
+    }
+
+    .tagline {
+        font-size: 1.8em;
+        color: #ADD8E6;
+        margin-bottom: 20px;
+        animation: fadeIn 1.8s ease;
+    }
+
+    .description {
+        font-size: 1.2em;
+        color: #ffffff;
+        line-height: 1.8;
+        margin-bottom: 25px;
+        animation: fadeIn 2s ease;
+    }
+
+    /* Price and Duration Styling */
+    .price-duration {
+        font-size: 1.3em;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        color: #FFA07A;
+        margin-bottom: 30px;
+    }
+
+    /* Call-to-Action Button */
+    .cta-button {
+        display: inline-block;
+        padding: 15px 40px;
+        background-color: #ADD8E6;
+        color: #000;
+        font-size: 1.2em;
+        font-weight: bold;
+        border-radius: 50px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cta-button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 25px rgba(173, 216, 230, 0.6);
+    }
+
+    /* Service Details Section */
+    .service-details {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        margin: 60px 20px;
+    }
+
+    .features-section, .benefits-section {
+        max-width: 500px;
+        text-align: left;
+    }
+
+    .features-section h2, .benefits-section h2 {
+        font-size: 2.5em;
+        color: #FFA07A;
+        margin-bottom: 20px;
+        text-shadow: 0px 4px 10px rgba(255, 160, 122, 0.6);
+    }
+
+    .features-list, .benefits-list {
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+
+    .features-list li, .benefits-list li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .features-list .icon {
+        color: #FFA07A;
+        margin-right: 10px;
+    }
+
+    /* Reviews Section */
+    .reviews-section {
+        max-width: 1000px;
+        margin: 60px auto;
+        text-align: center;
+    }
+
+    .reviews-section h2 {
+        font-size: 2.5em;
+        color: #FFA07A;
+        margin-bottom: 30px;
+        text-shadow: 0px 4px 10px rgba(255, 160, 122, 0.6);
+    }
+
+    .reviews-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .review {
+        background: #1a1a1a;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 10px 30px rgba(173, 216, 230, 0.2);
+        max-width: 300px;
+        color: #ADD8E6;
+        font-style: italic;
+    }
+
+    .reviewer {
+        font-size: 1em;
+        color: #FFA07A;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .service-image img {
+            width: 90%;
+        }
+        .price-duration {
+            flex-direction: column;
+        }
+        .features-section, .benefits-section {
+            max-width: 100%;
+            text-align: center;
+        }
+        .service-details {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+</style>
+
+
+
+<!-- Ultra-Advanced Text Effect Section -->
+<section class="text-effect-section">
+    <h1 class="animated-text">Transform Your Vision</h1>
+</section>
+
+<style>
+    /* Text Effect Section Styling */
+    .text-effect-section {
+        background-color: #000000; /* Extreme black background */
+        padding: 100px 20px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    /* Animated Text Styling */
+    .animated-text {
+        font-size: 6em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        color: #ADD8E6;
+        text-transform: uppercase;
+        letter-spacing: 12px;
+        text-shadow: 0px 0px 25px rgba(173, 216, 230, 0.8), 0px 0px 40px rgba(255, 160, 122, 0.6);
+        animation: pulse 1.5s infinite alternate, glow 2.5s infinite alternate, rotatePulse 8s infinite linear, popOut 1.2s infinite alternate;
+        position: relative;
+    }
+
+    /* Pulsing Effect */
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1); /* Slightly larger zoom effect */
+        }
+    }
+
+    /* Glowing Effect */
+    @keyframes glow {
+        0% {
+            text-shadow: 0px 0px 20px rgba(173, 216, 230, 0.6), 0px 0px 30px rgba(255, 160, 122, 0.5);
+            color: #ADD8E6;
+        }
+        100% {
+            text-shadow: 0px 0px 30px rgba(255, 160, 122, 0.8), 0px 0px 50px rgba(255, 215, 135, 0.6);
+            color: #FFA07A;
+        }
+    }
+
+    /* 3D Rotate Pulse */
+    @keyframes rotatePulse {
+        0% {
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        50% {
+            transform: rotateX(10deg) rotateY(10deg) scale(1.05);
+        }
+        100% {
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+    }
+
+    /* Popping Out Effect */
+    @keyframes popOut {
+        0% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        100% {
+            opacity: 0.9;
+            transform: scale(1.03); /* Slight enlargement */
+        }
+    }
+
+    /* Responsive Font Adjustment */
+    @media (max-width: 768px) {
+        .animated-text {
+            font-size: 4.5em;
+            letter-spacing: 5px;
+        }
+    }
+</style>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="/about.html">About</a>
+            <a href="/service.html">Services</a>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/start.html">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Ecommark Marketing Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Toggle Menu JavaScript -->
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Our Services | Spotlight Agency - Shopify & Website Development Solutions">
+    <meta name="description" content="Discover Spotlight Agency's range of services, including Shopify development, website design, and ecommerce strategies to help your business thrive online.">
+    <meta name="keywords" content="Spotlight Agency, services, Shopify development, website design, ecommerce strategies, online business solutions, web development, digital marketing">
+    <meta name="author" content="Spotlight Agency">
+    <link rel="canonical" href="https://dynamicsalesagency.com.ng/service.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dynamicsalesagency.com.ng/service.html">
+    <meta property="og:title" content="Our Services | Spotlight Agency - Shopify & Website Development Solutions">
+    <meta property="og:description" content="Explore our expert services in Shopify and website development, tailored to elevate your ecommerce business to new heights.">
+    <meta property="og:image" content="https://dynamicsalesagency.com.ng/img/logo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dynamicsalesagency.com.ng/service.html">
+    <meta property="twitter:title" content="Our Services | Spotlight Agency - Shopify & Website Development Solutions">
+    <meta property="twitter:description" content="Spotlight Agency offers professional services in Shopify development, website design, and ecommerce strategies. Empower your online business with our expertise.">
+    <meta property="twitter:image" content="https://dynamicsalesagency.com.ng/img/logo.png">
+
+    <!-- Structured Data Markup (JSON-LD) for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Spotlight Agency",
+      "url": "https://dynamicsalesagency.com.ng/service.html",
+      "logo": "https://dynamicsalesagency.com.ng/img/logo.png",
+      "description": "Spotlight Agency provides professional Shopify development, website design, and ecommerce strategies to boost online business success.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+2347068033310",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://www.tiktok.com/@dynamicsalesagency",
+        "https://wa.me/2347068033310"
+      ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    
+    <title>Our Services | Spotlight Agency - Shopify & Website Development Solutions</title>
+
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ADD8E6;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: #000000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.15);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .header:hover {
+            transform: translateY(-2px);
+            background-color: rgba(0, 0, 0, 0.95);
+        }
+
+        /* Centered Logo with Scale and Glow Effect */
+        .logo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .logo img {
+            height: 50px;
+            transition: transform 0.6s ease, box-shadow 0.6s ease;
+        }
+        .logo img:hover {
+            transform: rotate(360deg) scale(1.15);
+            box-shadow: 0px 0px 20px rgba(173, 216, 230, 0.6);
+        }
+
+        /* Navigation Menu */
+        .nav-menu {
+            display: flex;
+            flex: 2;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .nav-menu a {
+            font-size: 18px;
+            color: #ADD8E6;
+            padding: 5px 10px;
+            text-decoration: none; /* Remove underline */
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .nav-menu a:hover {
+            color: #FFA07A;
+            transform: scale(1.05) translateY(-2px);
+        }
+
+        /* Get Started Button */
+        .get-started {
+            background-color: #ADD8E6;
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s ease;
+            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.5);
+        }
+        .get-started:hover {
+            background-color: #FFA07A;
+            color: #000;
+            transform: translateY(-4px);
+            box-shadow: 0px 8px 30px rgba(255, 160, 122, 0.7);
+        }
+
+        /* Mobile Toggle Menu */
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            color: #ADD8E6;
+            cursor: pointer;
+        }
+
+        /* Responsive Header */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.95);
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 15px;
+                border-radius: 0 0 8px 8px;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+                flex: 1;
+                justify-content: flex-start;
+            }
+            .logo {
+                order: 1;
+                flex: 2;
+                justify-content: center;
+            }
+            .get-started {
+                order: 3;
+                justify-content: flex-end;
+            }
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #000000;
+            padding: 50px 20px;
+            color: #ADD8E6;
+            text-align: center;
+            border-top: 1px solid rgba(173, 216, 230, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            font-size: 1.1em;
+            text-decoration: none; /* Remove underline */
+            color: #ADD8E6;
+            position: relative;
+            transition: color 0.3s, transform 0.3s;
+            padding: 5px;
+        }
+        .footer-links a:hover {
+            color: #FFA07A;
+            transform: scale(1.1);
+        }
+
+        /* Social Icons with Glow and Scale Effect */
+        .social-icons {
+            margin: 30px 0;
+        }
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 24px;
+            color: #ADD8E6;
+            text-decoration: none; /* Remove underline */
+            transition: transform 0.3s, color 0.3s, box-shadow 0.3s ease;
+            padding: 12px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 6px 20px rgba(173, 216, 230, 0.4);
+        }
+        .social-icons a:hover {
+            color: #FFA07A;
+            transform: scale(1.3);
+            box-shadow: 0px 10px 30px rgba(255, 160, 122, 0.7);
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div> <!-- Toggle Menu Icon on Left -->
+    <div class="logo">
+        <img src="/img/logo.png" alt="Logo"> <!-- Centered Logo -->
+    </div>
+    <nav class="nav-menu" id="navMenu">
+        <a href="/index.html">Home</a>
+        <a href="/service.html">Services</a>
+        <a href="/pastwork.html">Portfolio</a>
+        <a href="/about.html">About Us</a>
+        <a href="/checker.html">Website Analyzer</a>
+        <a href="/start.html">Contact</a>
+    </nav>
+    <a href="/start.html" class="get-started">Get Started</a> <!-- "Get Started" Button on Right -->
+</header>
+
+    <!-- Breadcrumb Navigation Section -->
+<section class="breadcrumb-section">
+    <nav class="breadcrumb">
+        <a href="index.html">Home</a> &gt;
+        <span class="current">Services</span>
+    </nav>
+</section>
+
+<style>
+    /* Breadcrumb Section Styling */
+    .breadcrumb-section {
+        padding: 20px 40px;
+        background-color: #000000; /* Dark background to match the site's theme */
+        box-shadow: 0 4px 15px rgba(173, 216, 230, 0.2); /* Subtle shadow for depth */
+    }
+
+    /* Breadcrumb Navigation Styling */
+    .breadcrumb {
+        display: flex;
+        align-items: center;
+        font-size: 1.1em;
+        color: #ADD8E6; /* Light blue color to match the theme */
+    }
+
+    .breadcrumb a {
+        color: #ADD8E6;
+        text-decoration: none;
+        position: relative;
+        margin-right: 10px;
+        transition: color 0.3s ease;
+    }
+
+    /* Hover Effect for Breadcrumb Links */
+    .breadcrumb a:hover {
+        color: #FFA07A; /* Orange hover effect */
+    }
+
+    .breadcrumb a:hover::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #FFA07A; /* Underline hover effect */
+    }
+
+    /* Styling for Current Page */
+    .breadcrumb .current {
+        color: #FFA07A;
+        font-weight: bold;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Services Showcase Section -->
+<section class="services-section">
+    <h2>Our Services</h2>
+    <p class="section-description">Discover the services we offer to help you elevate your business and achieve success.</p>
+    <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+            <div class="icon">
+                <img src="img/web.png" alt="Service Icon">
+            </div>
+            <h3>Web Development</h3>
+            <p>Responsive, high-performance websites tailored to your business needs.</p>
+            <a href="services/web.html" class="learn-more">Learn More</a>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-card">
+            <div class="icon">
+                <img src="img/app.png" alt="Service Icon">
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>Feature-rich mobile applications for enhanced user engagement.</p>
+            <a href="services/app.html" class="learn-more">Learn More</a>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-card">
+            <div class="icon">
+                <img src="img/digi.png" alt="Service Icon">
+            </div>
+            <h3>Digital Marketing</h3>
+            <p>Boost your brand's visibility with our expert marketing strategies.</p>
+            <a href="services/digi.html" class="learn-more">Learn More</a>
+        </div>
+        <!-- Service 4 -->
+        <div class="service-card">
+            <div class="icon">
+                <img src="img/ecc.png" alt="Service Icon">
+            </div>
+            <h3>eCommerce Solutions</h3>
+            <p>Powerful, scalable eCommerce solutions to grow your business online.</p>
+            <a href="services/ecc.html" class="learn-more">Learn More</a>
+        </div>
+        <!-- Service 5 -->
+        <div class="service-card">
+            <div class="icon">
+                <img src="img/seo.png" alt="Service Icon">
+            </div>
+            <h3>SEO Optimization</h3>
+            <p>Optimize your website for higher search engine rankings.</p>
+            <a href="services/seo.html" class="learn-more">Learn More</a>
+        </div>
+        <!-- Service 6 -->
+        <div class="service-card">
+            <div class="icon">
+                <img src="img/ui.png" alt="Service Icon">
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Beautiful, user-friendly designs that enhance user experience.</p>
+            <a href="services/ui.html" class="learn-more">Learn More</a>
+        </div>
+        <!-- Service 7 -->
+        <div class="service-card">
+            <div class="icon">
+                <img src="img/data.png" alt="Service Icon">
+            </div>
+            <h3>Data Analytics</h3>
+            <p>Leverage data insights to make informed business decisions.</p>
+            <a href="services/data.html" class="learn-more">Learn More</a>
+        </div>
+        <!-- Service 8 -->
+        <div class="service-card">
+            <div class="icon">
+                <img src="img/cyb.png" alt="Service Icon">
+            </div>
+            <h3>Cybersecurity</h3>
+            <p>Protect your digital assets with our robust cybersecurity services.</p>
+            <a href="services/cyb.html" class="learn-more">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Services Section Styling */
+    .services-section {
+        padding: 80px 40px;
+        background-color: #000000;
+        color: #ADD8E6;
+        text-align: center;
+    }
+
+    .services-section h2 {
+        font-size: 3em;
+        color: #FFA500;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        margin-bottom: 15px;
+        text-shadow: 0px 4px 10px rgba(255, 160, 122, 0.6);
+    }
+
+    .section-description {
+        font-size: 1.2em;
+        color: #ADD8E6;
+        margin-bottom: 50px;
+    }
+
+    /* Services Grid Layout */
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    /* Individual Service Card Styling */
+    .service-card {
+        background: linear-gradient(145deg, #222222, #1a1a1a);
+        color: #ADD8E6;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0px 10px 25px rgba(173, 216, 230, 0.3);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        border: 2px solid transparent;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0px 25px 50px rgba(173, 216, 230, 0.6);
+        border: 2px solid #ADD8E6;
+    }
+
+    /* Service Icon */
+    .icon img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+        transition: transform 0.3s ease;
+    }
+    .service-card:hover .icon img {
+        transform: scale(1.2) rotate(15deg);
+    }
+
+    /* Service Title */
+    .service-card h3 {
+        font-size: 1.8em;
+        color: #FFA07A;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    /* Service Description */
+    .service-card p {
+        font-size: 1em;
+        line-height: 1.5;
+        color: #ADD8E6;
+        margin-bottom: 20px;
+    }
+
+    /* Learn More Button */
+    .learn-more {
+        font-size: 1em;
+        color: #ADD8E6;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 8px 15px;
+        display: inline-block;
+        transition: all 0.3s ease;
+        box-shadow: 0px 6px 15px rgba(173, 216, 230, 0.4);
+    }
+    .learn-more:hover {
+        color: #FFA500;
+        text-shadow: 0px 0px 10px rgba(255, 160, 122, 0.5);
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 1024px) {
+        .services-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Ultra-Advanced Text Effect Section -->
+<section class="text-effect-section">
+    <h1 class="animated-text">Dream Big</h1>
+</section>
+
+<style>
+    /* Text Effect Section Styling */
+    .text-effect-section {
+        background-color: #000000; /* Extreme black background */
+        padding: 100px 20px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    /* Animated Text Styling */
+    .animated-text {
+        font-size: 7em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        color: #ADD8E6; /* Light blue initial color */
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        text-shadow: 0px 0px 20px rgba(173, 216, 230, 0.8), 0px 0px 30px rgba(255, 160, 122, 0.6);
+        animation: pulse 1.8s infinite alternate, colorShift 3s infinite alternate, rotatePulse 8s infinite linear;
+        position: relative;
+    }
+
+    /* Pulsing Effect */
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.15); /* Zoom effect */
+        }
+    }
+
+    /* Color Shift Animation */
+    @keyframes colorShift {
+        0% {
+            color: #ADD8E6;
+            text-shadow: 0px 0px 20px rgba(173, 216, 230, 0.6), 0px 0px 40px rgba(173, 216, 230, 0.5);
+        }
+        100% {
+            color: #FFA07A; /* Shift to light orange */
+            text-shadow: 0px 0px 25px rgba(255, 160, 122, 0.8), 0px 0px 50px rgba(255, 215, 135, 0.6);
+        }
+    }
+
+    /* Rotate Pulse Effect */
+    @keyframes rotatePulse {
+        0% {
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        50% {
+            transform: rotateX(20deg) rotateY(10deg) scale(1.1); /* Slight 3D rotation and scaling */
+        }
+        100% {
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+    }
+
+    /* Responsive Font Adjustment */
+    @media (max-width: 768px) {
+        .animated-text {
+            font-size: 5em;
+            letter-spacing: 5px;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="start.html">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Dynamic Marketing Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Toggle Menu JavaScript -->
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

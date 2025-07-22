@@ -1,0 +1,144 @@
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    padding-top: 80px;
+}
+
+/* Light/Dark Mode Variables */
+:root {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --button-color: #FFA07A;
+    --highlight-color: #81d4fa;
+}
+
+.light-mode {
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --button-color: #FF6347;
+    --highlight-color: #4682B4;
+}
+
+/* Floating Dark/Light Mode Toggle Button */
+.side-mode-toggle {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
+    padding: 0.7rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    z-index: 2000;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.side-mode-toggle:hover {
+    background-color: var(--button-color);
+    transform: scale(1.1);
+}
+
+/* Header Style */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 2rem;
+    background-color: var(--bg-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.logo-image {
+    width: 50px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-menu a {
+    color: var(--highlight-color);
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--button-color);
+    transform: translateY(-3px);
+}
+
+.get-started-btn {
+    background-color: var(--button-color);
+    color: var(--bg-color);
+    padding: 0.6rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(255, 160, 122, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: var(--highlight-color);
+    transform: scale(1.05);
+}
+
+/* Mobile Toggle and Centered Logo for Mobile View */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+        gap: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        color: var(--highlight-color);
+        cursor: pointer;
+    }
+
+    .header {
+        padding: 1rem;
+    }
+}
+
+/* Footer Styles as Previously Defined */

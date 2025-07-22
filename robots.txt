@@ -1,0 +1,16 @@
+# Allow all search engines
+User-agent: *
+
+# Allow access to all content
+Disallow:
+
+# Block sensitive directories (if they exist)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /config/
+
+# Sitemap location
+Sitemap: https://dynamicsalesagency.com.ng/sitemap.xml

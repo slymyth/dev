@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Website Analyzer | Spotlight Agency - Boost Your Shopify Performance">
+    <meta name="description" content="Use Spotlight Agency's Website Analyzer to check your Shopify store's performance and get actionable insights to boost productivity and conversions.">
+    <meta name="keywords" content="Spotlight Agency, website analyzer, Shopify performance, ecommerce insights, website speed checker, online store analysis, Shopify optimization, digital marketing">
+    <meta name="author" content="Spotlight Agency">
+    <link rel="canonical" href="https://Ecommarksalesagency.com.ng/checker">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Ecommarksalesagency.com.ng/checker">
+    <meta property="og:title" content="Website Analyzer | Spotlight Agency - Boost Your Shopify Performance">
+    <meta property="og:description" content="Analyze your Shopify store with Spotlight Agency's Website Analyzer for insights that drive productivity and ecommerce growth.">
+    <meta property="og:image" content="https://Ecommarksalesagency.com.ng/img/logo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://Ecommarksalesagency.com.ng/checker">
+    <meta property="twitter:title" content="Website Analyzer | Spotlight Agency - Boost Your Shopify Performance">
+    <meta property="twitter:description" content="Check your Shopify store's performance with our Website Analyzer and get tips to improve speed, productivity, and conversions.">
+    <meta property="twitter:image" content="https://Ecommarksalesagency.com.ng/img/logo.png">
+
+    <!-- Structured Data Markup (JSON-LD) for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Spotlight Agency",
+      "url": "https://Ecommarksalesagency.com.ng/checker",
+      "logo": "https://Ecommarksalesagency.com.ng/img/logo.png",
+      "description": "Spotlight Agency's Website Analyzer offers insights to improve Shopify store performance, speed, and productivity.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+2347068033310",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://www.tiktok.com/@Ecommarksalesagency",
+        "https://wa.me/2347068033310"
+      ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    
+    <title>Website Analyzer | Spotlight Agency - Boost Your Shopify Performance</title>
+
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ADD8E6;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: #000000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.15);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .header:hover {
+            transform: translateY(-2px);
+            background-color: rgba(0, 0, 0, 0.95);
+        }
+
+        /* Centered Logo with Scale and Glow Effect */
+        .logo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .logo img {
+            height: 50px;
+            transition: transform 0.6s ease, box-shadow 0.6s ease;
+        }
+        .logo img:hover {
+            transform: rotate(360deg) scale(1.15);
+            box-shadow: 0px 0px 20px rgba(173, 216, 230, 0.6);
+        }
+
+        /* Navigation Menu */
+        .nav-menu {
+            display: flex;
+            flex: 2;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .nav-menu a {
+            font-size: 18px;
+            color: #ADD8E6;
+            padding: 5px 10px;
+            text-decoration: none; /* Remove underline */
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .nav-menu a:hover {
+            color: #FFA07A;
+            transform: scale(1.05) translateY(-2px);
+        }
+
+        /* Get Started Button */
+        .get-started {
+            background-color: #ADD8E6;
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s ease;
+            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.5);
+        }
+        .get-started:hover {
+            background-color: #FFA07A;
+            color: #000;
+            transform: translateY(-4px);
+            box-shadow: 0px 8px 30px rgba(255, 160, 122, 0.7);
+        }
+
+        /* Mobile Toggle Menu */
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            color: #ADD8E6;
+            cursor: pointer;
+        }
+
+        /* Responsive Header */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.95);
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 15px;
+                border-radius: 0 0 8px 8px;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+                flex: 1;
+                justify-content: flex-start;
+            }
+            .logo {
+                order: 1;
+                flex: 2;
+                justify-content: center;
+            }
+            .get-started {
+                order: 3;
+                justify-content: flex-end;
+            }
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #000000;
+            padding: 50px 20px;
+            color: #ADD8E6;
+            text-align: center;
+            border-top: 1px solid rgba(173, 216, 230, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            font-size: 1.1em;
+            text-decoration: none; /* Remove underline */
+            color: #ADD8E6;
+            position: relative;
+            transition: color 0.3s, transform 0.3s;
+            padding: 5px;
+        }
+        .footer-links a:hover {
+            color: #FFA07A;
+            transform: scale(1.1);
+        }
+
+        /* Social Icons with Glow and Scale Effect */
+        .social-icons {
+            margin: 30px 0;
+        }
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 24px;
+            color: #ADD8E6;
+            text-decoration: none; /* Remove underline */
+            transition: transform 0.3s, color 0.3s, box-shadow 0.3s ease;
+            padding: 12px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 6px 20px rgba(173, 216, 230, 0.4);
+        }
+        .social-icons a:hover {
+            color: #FFA07A;
+            transform: scale(1.3);
+            box-shadow: 0px 10px 30px rgba(255, 160, 122, 0.7);
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div> <!-- Toggle Menu Icon on Left -->
+    <div class="logo">
+        <img src="/img/logo.png" alt="Logo"> <!-- Centered Logo -->
+    </div>
+    <nav class="nav-menu" id="navMenu">
+        <a href="/index.html">Home</a>
+        <a href="/service.html">Services</a>
+        <a href="/pastwork.html">Portfolio</a>
+        <a href="/about.html">About Us</a>
+        <a href="/checker.html">Website Analyzer</a>
+        <a href="/start.html">Contact</a>
+    </nav>
+    <a href="/start.html" class="get-started">Get Started</a> <!-- "Get Started" Button on Right -->
+</header>
+
+
+    <section id="performance-analyzer">
+        <style>
+          #performance-analyzer * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          #performance-analyzer {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #222, #111);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5), 0px 4px 10px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            margin: auto;
+            animation: fadeIn 1.5s ease-in-out;
+          }
+          #performance-analyzer header h1 {
+            font-size: 2em;
+            color: #ffa500;
+            text-shadow: 0px 3px 8px rgba(255, 165, 0, 0.7);
+            margin-bottom: 10px;
+          }
+          #performance-analyzer header p {
+            color: #ddd;
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 20px;
+            max-width: 600px;
+            line-height: 1.5;
+          }
+          #performance-analyzer .input-section {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 20px;
+            flex-direction: column;
+          }
+          #performance-analyzer input, #performance-analyzer button {
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1em;
+            outline: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%;
+          }
+          #performance-analyzer input {
+            border: 1px solid #333;
+            background: #222;
+            color: #ddd;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+          }
+          #performance-analyzer button {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.5);
+          }
+          #performance-analyzer button:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.8);
+          }
+          #performance-analyzer .results-section {
+            display: none;
+            width: 100%;
+            max-width: 700px;
+            padding: 20px;
+            background: rgba(34, 34, 34, 0.9);
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            animation: slideUp 1s ease-in-out;
+          }
+          #performance-analyzer .metrics {
+            margin-top: 15px;
+            padding: 20px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #333, #222);
+            color: #ffdd57;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+          }
+          #performance-analyzer .metrics h3 {
+            font-size: 1.2em;
+            color: #ffcc00;
+            margin-bottom: 5px;
+            text-shadow: 0px 3px 8px rgba(255, 204, 0, 0.6);
+          }
+          #performance-analyzer .recommendations, #performance-analyzer .sales-prediction {
+            margin-top: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #444, #333);
+            border-radius: 15px;
+            color: #ffa07a;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+          }
+          #performance-analyzer .recommendations h3, #performance-analyzer .sales-prediction h3 {
+            color: #ffa500;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            text-shadow: 0px 3px 8px rgba(255, 165, 0, 0.7);
+          }
+          #performance-analyzer .recommendations ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #ddd;
+          }
+          #performance-analyzer .loading {
+            font-style: italic;
+            color: #ff9;
+            margin: 20px 0;
+          }
+          #performance-analyzer .download-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #ffaa00, #cc8800);
+            color: #000;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 0px 5px 15px rgba(255, 170, 0, 0.5);
+            transition: background-color 0.3s ease, transform 0.3s;
+          }
+          #performance-analyzer .download-button:hover {
+            background-color: #ff8800;
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(255, 136, 0, 0.7);
+          }
+          @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+          @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+          }
+      
+          /* Mobile responsiveness */
+          @media (max-width: 600px) {
+            #performance-analyzer {
+              padding: 20px 10px;
+            }
+            #performance-analyzer header h1 {
+              font-size: 1.8em;
+            }
+            #performance-analyzer header p {
+              font-size: 1em;
+            }
+            #performance-analyzer input, #performance-analyzer button {
+              padding: 12px;
+              font-size: 1em;
+            }
+            #performance-analyzer .metrics, #performance-analyzer .recommendations, #performance-analyzer .sales-prediction {
+              padding: 15px;
+            }
+            #performance-analyzer .metrics h3, #performance-analyzer .recommendations h3, #performance-analyzer .sales-prediction h3 {
+              font-size: 1.1em;
+            }
+            #performance-analyzer .download-button {
+              padding: 12px;
+              font-size: 1em;
+            }
+          }
+        </style>
+      
+        <header>
+          <h1>Shopify Store Performance Analyzer</h1>
+          <p>Analyze and optimize your store's speed, accessibility, and SEO for higher sales!</p>
+        </header>
+      
+        <main>
+          <div class="input-section">
+            <input type="url" id="website-url" placeholder="Enter your Shopify store URL" required>
+            <button onclick="analyzeWebsite()">Analyze</button>
+          </div>
+      
+          <div id="results" class="results-section">
+            <h2>Analysis Results</h2>
+            <p class="loading" id="loading">Analyzing... Please wait.</p>
+            <div class="metrics" id="performance-score"></div>
+            <div class="metrics" id="speed-index"></div>
+            <div class="metrics" id="first-contentful-paint"></div>
+            <div class="metrics" id="largest-contentful-paint"></div>
+            <div class="metrics" id="cumulative-layout-shift"></div>
+            <div class="metrics" id="time-to-interactive"></div>
+            <div class="sales-prediction" id="sales-prediction"></div>
+            <div class="recommendations" id="recommendations"></div>
+            <button class="download-button" onclick="downloadPDF()">Download Full Report</button>
+          </div>
+        </main>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+      
+        <script>
+          async function analyzeWebsite() {
+            const url = document.getElementById("website-url").value;
+            if (!url) {
+              alert("Please enter a valid URL.");
+              return;
+            }
+      
+            document.getElementById("results").style.display = "block";
+            document.getElementById("loading").style.display = "block";
+            document.querySelectorAll('.metrics, .sales-prediction').forEach(metric => metric.innerHTML = '');
+            document.getElementById("recommendations").innerHTML = '';
+      
+            try {
+              const apiKey = "AIzaSyCXk2WCLUvz0KovpOjo3nlMxwcpdvRB1hw";  // Replace with your actual API key
+              const response = await fetch(`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${url}&key=${apiKey}`);
+              const data = await response.json();
+      
+              document.getElementById("loading").style.display = "none";
+      
+              const performanceScore = data.lighthouseResult.categories.performance.score * 100;
+              const speedIndex = data.lighthouseResult.audits["speed-index"].displayValue;
+              const fcp = data.lighthouseResult.audits["first-contentful-paint"].displayValue;
+              const lcp = data.lighthouseResult.audits["largest-contentful-paint"].displayValue;
+              const cls = data.lighthouseResult.audits["cumulative-layout-shift"].displayValue;
+              const tti = data.lighthouseResult.audits["interactive"].displayValue;
+      
+              document.getElementById("performance-score").innerHTML = `<h3>Performance Score</h3><p>${performanceScore}% - Indicates overall loading speed and responsiveness.</p>`;
+              document.getElementById("speed-index").innerHTML = `<h3>Speed Index</h3><p>${speedIndex} - Lower values help keep users engaged by loading faster.</p>`;
+              document.getElementById("first-contentful-paint").innerHTML = `<h3>First Contentful Paint (FCP)</h3><p>${fcp} - Shows content quickly to keep users interested.</p>`;
+              document.getElementById("largest-contentful-paint").innerHTML = `<h3>Largest Contentful Paint (LCP)</h3><p>${lcp} - A quick LCP keeps visitors on the page, reducing bounce rates.</p>`;
+              document.getElementById("cumulative-layout-shift").innerHTML = `<h3>Cumulative Layout Shift (CLS)</h3><p>${cls} - Low values provide a stable browsing experience.</p>`;
+              document.getElementById("time-to-interactive").innerHTML = `<h3>Time to Interactive (TTI)</h3><p>${tti} - Quick interaction times improve the shopping experience.</p>`;
+      
+              const isSalesOptimized = performanceScore > 80 && parseFloat(cls) < 0.1 && parseFloat(tti) < 3;
+              const salesPredictionText = isSalesOptimized 
+                ? "Your store is optimized for strong sales potential based on performance and responsiveness!" 
+                : "Improvements are needed to fully optimize your store for increased sales and engagement.";
+      
+              document.getElementById("sales-prediction").innerHTML = `<h3>Sales Prediction</h3><p>${salesPredictionText}</p>`;
+      
+              document.getElementById("recommendations").innerHTML = `
+                <h3>Recommendations:</h3>
+                <ul>
+                  <li>Optimize images for faster load times and improved user engagement.</li>
+                  <li>Use responsive design for enhanced mobile experience.</li>
+                  <li>Minify CSS and JavaScript to improve loading speed.</li>
+                  <li>Enable text compression (gzip or brotli) to reduce data transfer time.</li>
+                  <li>Implement lazy loading for images to save resources.</li>
+                </ul>
+              `;
+            } catch (error) {
+              document.getElementById("loading").innerHTML = "Analysis failed. Please try again.";
+              console.error("Error:", error);
+            }
+          }
+      
+          function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+      
+            doc.text("Shopify Store Performance Analysis", 10, 10);
+            doc.text(document.getElementById("performance-score").innerText, 10, 20);
+            doc.text(document.getElementById("speed-index").innerText, 10, 30);
+            doc.text(document.getElementById("first-contentful-paint").innerText, 10, 40);
+            doc.text(document.getElementById("largest-contentful-paint").innerText, 10, 50);
+            doc.text(document.getElementById("cumulative-layout-shift").innerText, 10, 60);
+            doc.text(document.getElementById("time-to-interactive").innerText, 10, 70);
+            doc.text(document.getElementById("sales-prediction").innerText, 10, 80);
+            doc.fromHTML(document.getElementById("recommendations").innerHTML, 10, 90);
+            doc.save("performance_analysis.pdf");
+          }
+        </script>
+      </section>
+      
+      
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="service.html">Services</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Ecommark Marketing Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Font Awesome for Social Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <!-- Toggle Menu JavaScript -->
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

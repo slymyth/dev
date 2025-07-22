@@ -1,0 +1,3448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="qqFaVba-q_LeouLzazo-9T7tfjS4BqeHgX3JR6WTo4Q" />
+
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Myth Digital Agency | Website & Shopify Development">
+    <meta name="description"
+        content="Myth Digital Agency specializes in website development, Shopify solutions, and ecommerce strategies tailored to boost online business productivity.">
+    <meta name="keywords"
+        content="Myth Digital Agency, website development, Shopify development, ecommerce, online store, Shopify expert, Shopify website, web design, digital marketing, Nigeria">
+    <meta name="author" content="Myth Digital Agency">
+    <link rel="canonical" href="https://ecommarkdigital.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ecommarkdigital.com/">
+    <meta property="og:title" content="Myth Digital Agency | Expert Website & Shopify Development">
+    <meta property="og:description"
+        content="Explore expert website and Shopify development services by Myth Digital Agency to elevate your ecommerce presence.">
+    <meta property="og:image" content="https://ecommarkdigital.com/img/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ecommarkdigital.com/">
+    <meta property="twitter:title" content="Myth Digital Agency | Website & Shopify Development">
+    <meta property="twitter:description"
+        content="Myth Digital Agency offers professional website development and Shopify solutions to boost your online store’s productivity.">
+    <meta property="twitter:image" content="https://ecommarkdigital.com/img/logo.png">
+
+    <!-- Structured Data Markup (JSON-LD) for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Myth Digital Agency",
+      "url": "https://dynamicsalesagency.com.ng",
+      "logo": "https://ecommarkdigital.com/img/logo.png",
+      "description": "Professional website development and Shopify solutions for ecommerce businesses.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+2347068033310",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://www.tiktok.com/@dynamicsalesagency",
+        "https://wa.me/message/6NJCLYVRICDYN1"
+      ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.png" type="image/png">
+
+    <title>Myth Digital Agency | Website & Shopify Development</title>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ADD8E6;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: #000000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.15);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .header:hover {
+            transform: translateY(-2px);
+            background-color: rgba(0, 0, 0, 0.95);
+        }
+
+        /* Centered Logo with Scale and Glow Effect */
+        .logo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo img {
+            height: 50px;
+            transition: transform 0.6s ease, box-shadow 0.6s ease;
+        }
+
+        .logo img:hover {
+            transform: rotate(360deg) scale(1.15);
+            box-shadow: 0px 0px 20px rgba(173, 216, 230, 0.6);
+        }
+
+        /* Navigation Menu */
+        .nav-menu {
+            display: flex;
+            flex: 2;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .nav-menu a {
+            font-size: 18px;
+            color: #ADD8E6;
+            padding: 5px 10px;
+            text-decoration: none;
+            /* Remove underline */
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: #FFA07A;
+            transform: scale(1.05) translateY(-2px);
+        }
+
+        /* Get Started Button */
+        .get-started {
+            background-color: #ADD8E6;
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            /* Remove underline */
+            transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s ease;
+            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.5);
+        }
+
+        .get-started:hover {
+            background-color: #FFA07A;
+            color: #000;
+            transform: translateY(-4px);
+            box-shadow: 0px 8px 30px rgba(255, 160, 122, 0.7);
+        }
+
+        /* Mobile Toggle Menu */
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            color: #ADD8E6;
+            cursor: pointer;
+        }
+
+        /* Responsive Header */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.95);
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 15px;
+                border-radius: 0 0 8px 8px;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+                flex: 1;
+                justify-content: flex-start;
+            }
+
+            .logo {
+                order: 1;
+                flex: 2;
+                justify-content: center;
+            }
+
+            .get-started {
+                order: 3;
+                justify-content: flex-end;
+            }
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #000000;
+            padding: 50px 20px;
+            color: #ADD8E6;
+            text-align: center;
+            border-top: 1px solid rgba(173, 216, 230, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 1.1em;
+            text-decoration: none;
+            /* Remove underline */
+            color: #ADD8E6;
+            position: relative;
+            transition: color 0.3s, transform 0.3s;
+            padding: 5px;
+        }
+
+        .footer-links a:hover {
+            color: #FFA07A;
+            transform: scale(1.1);
+        }
+
+        /* Social Icons with Glow and Scale Effect */
+        .social-icons {
+            margin: 30px 0;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 24px;
+            color: #ADD8E6;
+            text-decoration: none;
+            /* Remove underline */
+            transition: transform 0.3s, color 0.3s, box-shadow 0.3s ease;
+            padding: 12px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 6px 20px rgba(173, 216, 230, 0.4);
+        }
+
+        .social-icons a:hover {
+            color: #FFA07A;
+            transform: scale(1.3);
+            box-shadow: 0px 10px 30px rgba(255, 160, 122, 0.7);
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div> <!-- Toggle Menu Icon on Left -->
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo"> <!-- Centered Logo -->
+        </div>
+        <nav class="nav-menu" id="navMenu">
+            <a href="/index.html">Home</a>
+            <a href="/service.html">Services</a>
+            <a href="/pastwork.html">Portfolio</a>
+            <a href="/about.html">About Us</a>
+            <a href="/checker.html">Website Analyzer</a>
+            <a href="/start.html">Contact</a>
+        </nav>
+        <a href="/start.html" class="get-started">Get Started</a> <!-- "Get Started" Button on Right -->
+    </header>
+
+
+    <!-- Advanced Marquee Announcement Section -->
+    <section class="announcement-banner">
+        <marquee class="announcement-marquee" behavior="scroll" direction="left" scrollamount="6"
+            onmouseover="this.stop();" onmouseout="this.start();">
+            <div class="announcement-content">
+                <span class="announcement-icon">📢</span>
+                <span class="announcement-text">We’ve applied the official Shopify 2025 Sales Strategy – experience the
+                    difference today!</span>
+                <a href="#holiday-strategy" class="announcement-button">Explore Strategy</a>
+            </div>
+        </marquee>
+    </section>
+
+    <style>
+        /* Announcement Banner Styling */
+        .announcement-banner {
+            width: 100%;
+            background-color: #000000;
+            /* Extreme black background */
+            padding: 10px 0;
+            font-family: 'Poppins', sans-serif;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            /* Soft shadow */
+            border-bottom: 2px solid #FFA07A;
+            /* Orange accent for festive touch */
+        }
+
+        /* Marquee Styling */
+        .announcement-marquee {
+            font-size: 1.2em;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 8px 0;
+        }
+
+        /* Announcement Content */
+        .announcement-content {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: nowrap;
+            /* Keeps elements in one line */
+            animation: contentGlow 2s ease-in-out infinite alternate;
+            /* Soft glowing animation */
+        }
+
+        .announcement-icon {
+            font-size: 1.5em;
+            color: #FFD700;
+            /* Golden color for icon */
+            animation: bounce 2s infinite;
+            /* Bounce effect */
+        }
+
+        .announcement-text {
+            color: #ADD8E6;
+            /* Light blue */
+            font-weight: 500;
+            white-space: nowrap;
+            /* Prevents line wrapping */
+            text-shadow: 1px 1px 5px rgba(173, 216, 230, 0.5);
+            /* Subtle glow for text */
+        }
+
+        /* Announcement Button Styling */
+        .announcement-button {
+            background-color: #ADD8E6;
+            /* Light blue */
+            color: #000000;
+            /* Black text */
+            padding: 8px 18px;
+            font-size: 0.9em;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 10px rgba(173, 216, 230, 0.3);
+            /* Light blue shadow for depth */
+            white-space: nowrap;
+            /* Prevents line wrapping */
+        }
+
+        .announcement-button:hover {
+            background-color: #FFA07A;
+            /* Orange on hover */
+            transform: translateY(-3px);
+            /* Lift effect on hover */
+            box-shadow: 0 8px 15px rgba(255, 160, 122, 0.4);
+            /* Enhanced shadow */
+        }
+
+        /* Icon Bounce Animation */
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-4px);
+            }
+        }
+
+        /* Soft Glowing Animation for Text */
+        @keyframes contentGlow {
+            from {
+                text-shadow: 1px 1px 5px rgba(173, 216, 230, 0.3);
+            }
+
+            to {
+                text-shadow: 1px 1px 15px rgba(173, 216, 230, 0.6);
+            }
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .announcement-banner {
+                padding: 8px 0;
+            }
+
+            .announcement-content {
+                gap: 10px;
+            }
+
+            .announcement-icon {
+                font-size: 1.3em;
+            }
+
+            .announcement-text {
+                font-size: 0.9em;
+            }
+
+            .announcement-button {
+                padding: 6px 12px;
+                font-size: 0.85em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .announcement-icon {
+                font-size: 1.2em;
+            }
+
+            .announcement-text {
+                font-size: 0.85em;
+            }
+
+            .announcement-button {
+                padding: 5px 10px;
+                font-size: 0.8em;
+            }
+        }
+    </style>
+
+
+
+    <section class="slider" id="slider">
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <picture class="slider-image">
+                <source media="(max-width: 768px)" srcset="img/mobile2.png">
+                <source media="(min-width: 769px)" srcset="img/2.png">
+                <img src="img/2.png" alt="Slide 1">
+            </picture>
+
+            <!-- Slide 2 -->
+            <picture class="slider-image">
+                <source media="(max-width: 768px)" srcset="img/mobile1.png">
+                <source media="(min-width: 769px)" srcset="img/deskp.png">
+                <img src="img/deskp.png" alt="Slide 2">
+            </picture>
+
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="slider-nav">
+            <button onclick="prevSlide()">&#10094;</button>
+            <button onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <!-- Dots Navigation -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <style>
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            /* Full viewport height */
+            overflow: hidden;
+            background: #000;
+            /* Fallback background */
+        }
+
+        .slides-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-image {
+            flex: 0 0 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* Ensures the full image is shown without cropping */
+        }
+
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            z-index: 2;
+        }
+
+        .slider-nav button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .slider-nav button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+
+        .dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 2;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .dot:hover,
+        .dot.active {
+            background-color: white;
+            transform: scale(1.2);
+        }
+    </style>
+
+    <script>
+        let slideIndex = 0;
+
+        // Cache DOM elements
+        const slides = document.querySelectorAll('.slider-image');
+        const dots = document.querySelectorAll('.dot');
+
+        // Function to show slides
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.style.display = (index === slideIndex) ? 'block' : 'none';
+            });
+
+            dots.forEach((dot, index) => {
+                if (index === slideIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        // Next Slide
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlides();
+        }
+
+        // Previous Slide
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+            showSlides();
+        }
+
+        // Jump to a specific slide
+        function currentSlide(n) {
+            slideIndex = n - 1;
+            showSlides();
+        }
+
+        // Auto-play slides every 5 seconds
+        setInterval(nextSlide, 5000);
+
+        // Initialize the slider
+        showSlides();
+    </script>
+
+
+
+
+
+    <!-- Festive Icon Trigger (Hidden Initially) -->
+    <div id="popupIcon" class="popup-trigger-icon" onclick="openPopup()">🎄</div>
+
+    <!-- Full-Page Pop-Up Promotional Section -->
+    <div id="popupPromotion" class="popup-promotion-section">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closePopup()">&times;</span>
+            <h2>Wanna Try Performance-Based?</h2>
+            <p>Work with us risk-free. No upfront costs – you only pay when we deliver real, measurable results. It's
+                the smartest way to grow your store with a partner who's 100% aligned with your success.</p>
+            <a href="https://wa.me/message/6NJCLYVRICDYN1" class="reach-out-button" target="_blank">See How It Works</a>
+        </div>
+    </div>
+
+    <style>
+        /* Icon Trigger Styling */
+        .popup-trigger-icon {
+            display: none;
+            /* Hidden initially */
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            font-size: 2.5em;
+            cursor: pointer;
+            z-index: 999;
+            color: #FFD700;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .popup-trigger-icon:hover {
+            transform: scale(1.2);
+            color: #FFA07A;
+        }
+
+        /* Full-Page Pop-Up Section */
+        .popup-promotion-section {
+            display: flex;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            /* Semi-transparent black background */
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.5s ease;
+            /* Fade-in animation */
+        }
+
+        /* Centered Pop-Up Content */
+        .popup-content {
+            background-color: #000000;
+            /* Extreme black background */
+            padding: 40px 30px;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        .popup-content h2 {
+            color: #FFD700;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .popup-content p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Reach Out Button */
+        .reach-out-button {
+            display: inline-block;
+            background-color: #FFD700;
+            color: #000;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .reach-out-button:hover {
+            background-color: #FFA07A;
+        }
+
+        /* Close Button */
+        .close-popup {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            color: #ffffff;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .close-popup:hover {
+            color: #FFA07A;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .popup-content {
+                width: 90%;
+                padding: 30px 20px;
+            }
+
+            .popup-content h2 {
+                font-size: 1.8em;
+            }
+
+            .popup-content p {
+                font-size: 1em;
+            }
+
+            .reach-out-button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .popup-content {
+                width: 95%;
+                padding: 25px 15px;
+            }
+
+            .popup-content h2 {
+                font-size: 1.5em;
+            }
+
+            .popup-content p {
+                font-size: 0.95em;
+            }
+
+            .reach-out-button {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+
+    <script>
+        // Function to Show the Pop-Up on Page Load
+        window.onload = function () {
+            openPopup();
+        };
+
+        // Function to Open the Pop-Up
+        function openPopup() {
+            document.getElementById("popupPromotion").style.display = "flex";
+            document.getElementById("popupIcon").style.display = "none"; // Hide the icon while the pop-up is open
+        }
+
+        // Function to Close the Pop-Up
+        function closePopup() {
+            document.getElementById("popupPromotion").style.display = "none";
+            document.getElementById("popupIcon").style.display = "block"; // Show the icon when pop-up is closed
+        }
+    </script>
+
+
+    <!-- Eye-Catching Moving Text Section with Interchanged Colors -->
+    <section class="moving-text-section">
+        <div class="moving-text">
+            <span class="text-style1">Myth Digital Agency</span>
+            <span class="text-style2">Your Progress, Our Passion</span>
+        </div>
+    </section>
+
+    <style>
+        /* Moving Text Section Styling */
+        .moving-text-section {
+            overflow: hidden;
+            width: 100%;
+            background-color: #000000;
+            /* Extreme black background */
+            padding: 60px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .moving-text {
+            display: flex;
+            gap: 150px;
+            animation: scrollText 25s linear infinite;
+            white-space: nowrap;
+        }
+
+        /* Text Style 1: Light Blue Gradient with Stylish Shadow */
+        .text-style1 {
+            font-family: 'Montserrat', sans-serif;
+            /* Modern, clean font */
+            font-size: 5em;
+            /* Large size for impact */
+            font-weight: 800;
+            color: #87CEEB;
+            /* Sky blue base color */
+            background: linear-gradient(45deg, #87CEEB, #B0E0E6);
+            /* Soft sky blue gradient */
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 3px 3px 10px rgba(135, 206, 235, 0.7), 6px 6px 20px rgba(176, 224, 230, 0.5);
+            animation: float3D 3s ease-in-out infinite alternate;
+            transform-style: preserve-3d;
+            transform: rotateX(6deg) rotateY(6deg);
+        }
+
+        /* Text Style 2: Orange Gradient with Warm Glow */
+        .text-style2 {
+            font-family: 'Pacifico', cursive;
+            /* Stylish, cursive font */
+            font-size: 5em;
+            /* Large size for impact */
+            color: #FFA500;
+            /* Orange base color */
+            background: linear-gradient(45deg, #FFA500, #FFD700);
+            /* Warm orange/gold gradient */
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 3px 3px 10px rgba(255, 165, 0, 0.7), 6px 6px 20px rgba(255, 215, 0, 0.5);
+            animation: float3D 3s ease-in-out infinite alternate;
+            transform-style: preserve-3d;
+            transform: rotateX(6deg) rotateY(-6deg);
+        }
+
+        /* Keyframes for Floating 3D Effect */
+        @keyframes float3D {
+            0% {
+                transform: rotateX(6deg) rotateY(6deg) translateZ(5px);
+                text-shadow: 3px 3px 10px rgba(135, 206, 235, 0.7), 6px 6px 20px rgba(176, 224, 230, 0.5);
+            }
+
+            100% {
+                transform: rotateX(12deg) rotateY(-6deg) translateZ(15px);
+                text-shadow: 5px 5px 15px rgba(135, 206, 235, 1), 10px 10px 25px rgba(176, 224, 230, 0.7);
+            }
+        }
+
+        /* Keyframes for Horizontal Scrolling */
+        @keyframes scrollText {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+
+    <!-- Engaging Skills Showcase Section -->
+    <section class="skills-showcase-section">
+        <div class="section-header">
+            <h2>What We Excel At</h2>
+            <p>Our expertise empowers your digital success. Explore our key competencies designed to elevate your
+                business.</p>
+        </div>
+        <div class="skills-container">
+            <!-- Skill 1 -->
+            <div class="skill">
+                <div class="skill-overlay"></div>
+                <h3>Web Development</h3>
+                <img src="img/5.png" alt="Web Development Image">
+                <p>Creating custom, responsive, and SEO-friendly websites that drive engagement and conversions.</p>
+            </div>
+            <!-- Skill 2 -->
+            <div class="skill">
+                <div class="skill-overlay"></div>
+                <h3>Graphic Design</h3>
+                <img src="img/6.png" alt="Graphic Design Image">
+                <p>Crafting visually stunning graphics that capture your brand’s essence and resonate with your
+                    audience.</p>
+            </div>
+            <!-- Skill 3 -->
+            <div class="skill">
+                <div class="skill-overlay"></div>
+                <h3>SEO Optimization</h3>
+                <img src="img/7.png" alt="SEO Optimization Image">
+                <p>Enhancing your online presence with strategic SEO to rank higher and attract the right customers.</p>
+            </div>
+            <!-- Skill 4 -->
+            <div class="skill">
+                <div class="skill-overlay"></div>
+                <h3>Content Creation</h3>
+                <img src="img/8.png" alt="Content Creation Image">
+                <p>Producing compelling, targeted content that speaks to your audience and builds brand loyalty.</p>
+            </div>
+
+
+
+
+            <!-- Skill 3 -->
+            <div class="skill">
+                <div class="skill-overlay"></div>
+                <h3>Email Marketing</h3>
+                <img src="img/emailmark.png" alt="Email Marketing Image">
+                <p>Boosting your brand with targeted email marketing to engage customers, drive conversions, and build
+                    lasting loyalty.</p>
+            </div>
+
+
+            <!-- Skill 3 -->
+            <div class="skill">
+                <div class="skill-overlay"></div>
+                <h3>Social Media Marketing</h3>
+                <img src="img/socialmmd.png" alt="Social Media Marketing Image">
+                <p>Amplifying your brand through strategic social media marketing to grow engagement, build community,
+                    and drive real results.</p>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Skills Showcase Section Styling */
+        .skills-showcase-section {
+            background-color: #000000;
+            /* Extreme black background */
+            color: #ADD8E6;
+            /* Light blue text color */
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        /* Section Title and Subtitle */
+        .section-header h2 {
+            font-size: 3em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            color: #FFA500;
+            /* Orange color for title */
+            margin-bottom: 10px;
+        }
+
+        .section-header p {
+            font-size: 1.2em;
+            font-family: 'Roboto', sans-serif;
+            color: #ADD8E6;
+            /* Light blue for subtitle */
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        /* Skills Container */
+        .skills-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Skill Cards */
+        .skill {
+            flex: 1 1 20%;
+            max-width: 250px;
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+            background: #1A1A1A;
+            /* Dark background for contrast */
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        /* Overlay Effect */
+        .skill-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(145deg, rgba(255, 215, 0, 0.3), rgba(0, 191, 255, 0.3));
+            border-radius: 15px;
+            opacity: 0;
+            transition: opacity 0.4s;
+            z-index: 1;
+        }
+
+        .skill:hover .skill-overlay {
+            opacity: 1;
+        }
+
+        .skill:hover {
+            transform: translateY(-10px) scale(1.05) rotateX(3deg) rotateY(3deg);
+            box-shadow: 0px 15px 30px rgba(173, 216, 230, 0.7);
+            /* Enhanced light blue shadow */
+        }
+
+        .skill h3 {
+            font-size: 1.5em;
+            font-family: 'Montserrat', sans-serif;
+            color: #FFA500;
+            /* Orange for skill title */
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Description for each skill */
+        .skill p {
+            font-size: 1em;
+            color: #ADD8E6;
+            margin-top: 10px;
+            line-height: 1.5;
+            position: relative;
+            z-index: 2;
+        }
+
+        .skill img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.5);
+            /* Light blue shadow */
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+            z-index: 2;
+        }
+
+        .skill img:hover {
+            transform: scale(1.07);
+            box-shadow: 0px 6px 25px rgba(255, 215, 0, 0.6);
+            /* Golden shadow on hover */
+        }
+
+        /* Responsive Layout for Smaller Screens */
+        @media (max-width: 768px) {
+            .skills-container {
+                flex-direction: column;
+            }
+
+            .skill {
+                max-width: 80%;
+                margin: 20px auto;
+            }
+        }
+    </style>
+
+    <!-- Enhanced Christmas Strategy Section -->
+    <section class="christmas-strategy-section">
+        <div class="content-wrapper">
+            <div class="text-container">
+                <h2>Top-Tier 2025 Sales Strategy That’s Driving Real Results</h2>
+                <p>This is the exact combination of strategies we've implemented across multiple high-performing Shopify
+                    stores in 2025. From deep website optimization to advanced ad campaigns and automated retargeting,
+                    this sales stack is designed to maximize visibility, traffic, and conversions—every single day.</p>
+                <div class="extra-tips">
+                    <h3>Key Services to Drive Growth:</h3>
+                    <div class="tips-grid">
+                        <div class="tip">
+                            <span class="tip-icon">📈</span>
+                            <div class="tip-content">
+                                <h4>Website Optimization </h4>
+                                <p>We fine-tune layout, speed, product structure, and SEO to turn visitors into buyers
+                                    and boost Google rankings.</p>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <span class="tip-icon">📢</span>
+                            <div class="tip-content">
+                                <h4>Social Media Shops & Ads</h4>
+                                <p>We set up TikTok and Meta shops and run viral ads to bring in traffic that converts
+                                    fast.</p>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <span class="tip-icon">💰</span>
+                            <div class="tip-content">
+                                <h4>Google Shopping & Adsr</h4>
+                                <p>We list your products on Google and run search ads to capture high-intent buyers
+                                    actively looking to purchase.</p>
+                            </div>
+                        </div>
+                        <div class="tip">
+                            <span class="tip-icon">📧</span>
+                            <div class="tip-content">
+                                <h4>Email & SMS Automation</h4>
+                                <p>We recover abandoned carts and drive repeat sales with automated messages that feel
+                                    personal and timely.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://wa.me/message/6NJCLYVRICDYN1" class="cta-button">Discover Services</a>
+            </div>
+            <div class="image-container">
+                <img src="img/christ.png" alt="Christmas Strategy" class="featured-image">
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Christmas Strategy Section Styling */
+        .christmas-strategy-section {
+            padding: 80px 15px;
+            background: linear-gradient(135deg, #004d4d, #001f1f);
+            color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 50, 50, 0.3);
+            margin: 20px;
+        }
+
+        /* Content Wrapper */
+        .content-wrapper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        /* Image Container */
+        .image-container {
+            flex: 1;
+            max-width: 100%;
+            transition: transform 0.5s ease;
+            text-align: center;
+        }
+
+        .image-container:hover {
+            transform: scale(1.05);
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+        }
+
+        /* Text Container */
+        .text-container {
+            flex: 1;
+            max-width: 100%;
+            background: rgba(0, 47, 47, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 50, 50, 0.3);
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .text-container h2 {
+            font-size: 2em;
+            font-weight: 700;
+            color: #FFD700;
+            margin-bottom: 15px;
+        }
+
+        .text-container p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        /* Extra Tips Styling */
+        .extra-tips {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .extra-tips h3 {
+            font-size: 1.5em;
+            color: #FFA07A;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .tip {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 12px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .tip:hover {
+            transform: translateY(-5px);
+        }
+
+        .tip-icon {
+            font-size: 1.8em;
+            color: #FFD700;
+        }
+
+        .tip-content h4 {
+            font-size: 1.1em;
+            color: #FFD700;
+            margin: 0;
+        }
+
+        .tip-content p {
+            margin: 5px 0 0;
+            font-size: 0.95em;
+        }
+
+        /* CTA Button Styling */
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 1em;
+            font-weight: 600;
+            color: #000000;
+            background-color: #FFD700;
+            border: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 8px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .cta-button:hover {
+            background-color: #FFA07A;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px rgba(255, 160, 122, 0.5);
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 1024px) {
+            .content-wrapper {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .text-container h2 {
+                font-size: 1.8em;
+            }
+
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-button {
+                padding: 10px 25px;
+                font-size: 0.95em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .christmas-strategy-section {
+                padding: 40px 10px;
+                margin: 10px;
+            }
+
+            .text-container h2 {
+                font-size: 1.6em;
+            }
+
+            .text-container p,
+            .extra-tips h3,
+            .tip-content h4,
+            .tip-content p {
+                font-size: 1em;
+            }
+
+            .image-container,
+            .text-container {
+                max-width: 100%;
+            }
+
+            .cta-button {
+                padding: 8px 20px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text-container h2 {
+                font-size: 1.4em;
+            }
+
+            .tip-icon {
+                font-size: 1.5em;
+            }
+
+            .cta-button {
+                padding: 6px 18px;
+                font-size: 0.85em;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Featured Work Section -->
+    <section class="featured-work-section">
+        <div class="section-header">
+            <h2>Our Featured Work</h2>
+            <p>A selection of our top projects, showcasing our expertise and dedication to excellence.</p>
+        </div>
+        <div class="featured-work-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-overlay"></div>
+                <img src="img/liveup.png" alt="Project 1 Image">
+                <h3>Liveupgood</h3>
+                <p>A Ecommark e-commerce website designed for optimal performance and customer engagement.</p>
+                <a href="https://liveupgood.com" class="view-project-btn">View Project</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-overlay"></div>
+                <img src="img/fam.png" alt="Project 2 Image">
+                <h3>Famarketshop</h3>
+                <p>An immersive online store developed to establish a trustworthy and captivating brand presence.</p>
+                <a href="#" class="view-project-btn">View Project</a>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-overlay"></div>
+                <img src="img/true.png" alt="Project 3 Image">
+                <h3>Truegloryhair</h3>
+                <p>An SEO-optimized website built to attract organic traffic and foster customer loyalty.</p>
+                <a href="https://truegloryhair.com" class="view-project-btn">View Project</a>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-overlay"></div>
+                <img src="img/culi.png" alt="Project 4 Image">
+                <h3>The Culinary Co.</h3>
+                <p>A visually appealing website crafted to showcase culinary expertise and increase audience reach.</p>
+                <a href="https://theculinaryco.co" class="view-project-btn">View Project</a>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-overlay"></div>
+                <img src="img/nanamacs.png" alt="Project 5 Image">
+                <h3>Nanamacs</h3>
+                <p>A responsive website offering a seamless shopping experience across devices.</p>
+                <a href="https://nanamacs.com" class="view-project-btn">View Project</a>
+            </div>
+            <!-- Project 6 -->
+            <div class="project-card">
+                <div class="project-overlay"></div>
+                <img src="img/insite.png" alt="Project 6 Image">
+                <h3>Insiteactive</h3>
+                <p>A website integrated with a custom analytics dashboard for effective business insights.</p>
+                <a href="https://www.insiteactive.com/en-us" class="view-project-btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        /* Featured Work Section Styling */
+        .featured-work-section {
+            background-color: #000000;
+            /* Extreme black background */
+            color: #ADD8E6;
+            /* Light blue text color */
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        /* Section Title and Subtitle */
+        .section-header h2 {
+            font-size: 3em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            color: #FFA500;
+            /* Orange color for title */
+            margin-bottom: 10px;
+        }
+
+        .section-header p {
+            font-size: 1.2em;
+            font-family: 'Roboto', sans-serif;
+            color: #ADD8E6;
+            /* Light blue for subtitle */
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        /* Featured Work Container */
+        .featured-work-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            justify-items: center;
+        }
+
+        /* Project Card Styling */
+        .project-card {
+            position: relative;
+            background-color: #1A1A1A;
+            /* Dark background */
+            border-radius: 15px;
+            overflow: hidden;
+            max-width: 300px;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0px 10px 20px rgba(173, 216, 230, 0.5);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.05) rotateX(3deg) rotateY(3deg);
+            /* 3D hover effect */
+            box-shadow: 0px 15px 30px rgba(173, 216, 230, 0.7);
+        }
+
+        /* Overlay Effect */
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(145deg, rgba(255, 215, 0, 0.2), rgba(0, 191, 255, 0.2));
+            opacity: 0;
+            transition: opacity 0.4s;
+            z-index: 1;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        /* Project Image */
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.5);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .project-card img:hover {
+            transform: scale(1.07);
+            box-shadow: 0px 6px 25px rgba(255, 215, 0, 0.6);
+            /* Golden shadow on hover */
+        }
+
+        /* Project Title */
+        .project-card h3 {
+            font-size: 1.5em;
+            color: #FFA500;
+            /* Orange color for title */
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Project Description */
+        .project-card p {
+            font-size: 1em;
+            color: #ADD8E6;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* View Project Button */
+        .view-project-btn {
+            display: inline-block;
+            font-size: 1em;
+            color: #000;
+            background-color: #ADD8E6;
+            /* Light blue background for button */
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.6);
+            /* Orange shadow */
+        }
+
+        .view-project-btn:hover {
+            background-color: #FFA500;
+            /* Orange on hover */
+            color: #000;
+            box-shadow: 0px 6px 20px rgba(255, 215, 0, 0.8);
+            /* Enhanced shadow on hover */
+        }
+
+        /* Responsive Layout for Smaller Screens */
+        @media (max-width: 768px) {
+            .featured-work-container {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card {
+                max-width: 80%;
+            }
+        }
+    </style>
+
+
+
+
+
+
+    <!-- Flashing, Shaking, and Pulsing Text Section -->
+    <section class="flashing-text-section">
+        <h1 class="flashing-text">Explore Beyond</h1>
+    </section>
+
+    <style>
+        /* Flashing Text Section Styling */
+        .flashing-text-section {
+            background-color: #000000;
+            /* Extreme black background */
+            padding: 120px 20px;
+            text-align: center;
+        }
+
+        /* Flashing, Pulsing, and Shaking Main Text */
+        .flashing-text {
+            font-size: 5em;
+            /* Extra large font size for impact */
+            font-family: 'Poppins', sans-serif;
+            /* Modern, bold font */
+            font-weight: 700;
+            color: #FFFFFF;
+            /* Initial white text color */
+            text-transform: uppercase;
+            letter-spacing: 12px;
+            animation: flash 1s infinite alternate, shake 0.5s infinite, pulse 3s infinite;
+            /* Combined animations */
+            margin: 0;
+        }
+
+        /* Flash Color Gradient Animation */
+        @keyframes flash {
+            0% {
+                color: #FFFFFF;
+                /* Bright white */
+                text-shadow: 0px 0px 15px rgba(173, 216, 230, 0.6), 0px 0px 30px rgba(173, 216, 230, 0.4);
+            }
+
+            100% {
+                color: #ADD8E6;
+                /* Light blue */
+                text-shadow: 0px 0px 25px rgba(173, 216, 230, 0.8), 0px 0px 40px rgba(173, 216, 230, 0.6);
+            }
+        }
+
+        /* Subtle Shake Animation */
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-2px);
+            }
+
+            50% {
+                transform: translateX(2px);
+            }
+
+            75% {
+                transform: translateX(-2px);
+            }
+        }
+
+        /* Pulse (Zoom In and Out) Animation */
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            /* Slight zoom effect */
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .flashing-text {
+                font-size: 5em;
+                /* Reduced font size for tablets */
+                letter-spacing: 8px;
+                /* Adjust spacing */
+            }
+
+            .flashing-text-section {
+                padding: 80px 20px;
+                /* Adjust padding */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .flashing-text {
+                font-size: 3em;
+                /* Further reduced font size for small screens */
+                letter-spacing: 5px;
+                /* Adjust spacing */
+            }
+
+            .flashing-text-section {
+                padding: 60px 20px;
+                /* Reduced padding for mobile */
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Advanced Image and Text Section -->
+    <section class="image-text-section">
+        <div class="image-container">
+            <img src="img/500.png" alt="Featured Image" class="featured-image">
+        </div>
+        <div class="text-container">
+            <h2>Integrate Social Media Advertisement</h2>
+            <p>Boosting your website’s sales and productivity can be as simple as stepping up your social media game
+                with the right content and images. Think of it as putting your best foot forward—every post should feel
+                like a conversation that invites people in. Using high-quality visuals and authentic messages helps
+                connect with your audience, making them curious to learn more. When you showcase what makes your product
+                or service unique, it builds trust and excitement, encouraging people to visit your site and, hopefully,
+                become loyal customers. It’s all about showing them why your brand is worth their time in a way that
+                feels real and relatable.</p>
+            <a href="https://wa.me/message/6NJCLYVRICDYN1" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <style>
+        /* Image and Text Section Styling */
+        .image-text-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 20px;
+            background-color: #000000;
+            /* Dark background for contrast */
+            color: #ffffff;
+            gap: 30px;
+            perspective: 1000px;
+            /* Perspective for 3D effect */
+        }
+
+        /* Image Container Styling */
+        .image-container {
+            flex: 1;
+            background: #000000;
+            transform: translateZ(0);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            /* Smooth hover effects */
+        }
+
+        .image-container:hover {
+            transform: scale(1.05) translateZ(10px);
+            /* Hover zoom and depth */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.0);
+            /* Soft shadow */
+        }
+
+        .featured-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            /* Rounded corners */
+        }
+
+        /* Text Container Styling */
+        .text-container {
+            flex: 1;
+            transform: translateZ(0);
+            padding: 20px;
+            background: #000000;
+            /* Slightly darker background for text */
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.0);
+            /* Soft shadow for depth */
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .text-container h2 {
+            font-size: 2.5em;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .text-container p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* Call-to-Action Button Styling */
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1em;
+            font-weight: 600;
+            color: #000000;
+            background-color: #ADD8E6;
+            /* Light blue button color */
+            border: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 8px 15px rgba(173, 216, 230, 0.3);
+            /* Button shadow for depth */
+        }
+
+        .cta-button:hover {
+            background-color: #FFA07A;
+            /* Change color on hover */
+            transform: translateY(-3px);
+            /* Lift effect on hover */
+            box-shadow: 0 12px 20px rgba(255, 160, 122, 0.4);
+            /* Intensify shadow */
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .image-text-section {
+                flex-direction: column;
+                padding: 40px 20px;
+                gap: 20px;
+            }
+
+            .text-container h2 {
+                font-size: 2em;
+            }
+
+            .text-container p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text-container h2 {
+                font-size: 1.8em;
+            }
+
+            .text-container p {
+                font-size: 0.9em;
+            }
+
+            .cta-button {
+                padding: 10px 25px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 3 Ways to Get Started Section -->
+    <section class="pricing-section">
+        <div class="section-header">
+            <h2>3 Ways to Get Started With Us</h2>
+            <p>Choose the model that best suits your business goals and budget.</p>
+        </div>
+        <div class="pricing-container">
+            <!-- Free Audit / Consultation -->
+            <div class="pricing-card">
+                <div class="icon">
+                    <img src="img/audit.png" alt="Free Audit Icon">
+                </div>
+                <h3>Free Audit / Consultation</h3>
+                <ul>
+                    <li><span class="check">✓</span> Actionable insights with zero commitment</li>
+                    <li><span class="check">✓</span> Website & funnel analysis by an expert</li>
+                    <li><span class="check">✓</span> Discover hidden growth opportunities</li>
+                    <li><span class="check">✓</span> Conversion rate bottleneck diagnosis</li>
+                    <li><span class="check">✓</span> Tailored niche-specific recommendations</li>
+                    <li><span class="check">✓</span> Know your next steps without spending</li>
+                </ul>
+                <a href="https://wa.me/message/6NJCLYVRICDYN1" class="pricing-btn">Get Free Audit</a>
+            </div>
+
+            <!-- Hire Our Freelancer -->
+            <div class="pricing-card featured">
+                <div class="icon">
+                    <img src="img/freelancer.png" alt="Freelancer Icon">
+                </div>
+                <h3>Hire Our Freelancer</h3>
+                <ul>
+                    <li><span class="check">✓</span> Ecommerce strategist dedicated to your brand</li>
+                    <li><span class="check">✓</span> Flexible packages tailored to your needs</li>
+                    <li><span class="check">✓</span> Direct, fast communication</li>
+                    <li><span class="check">✓</span> Shopify, Klaviyo, Meta & Google Ads expertise</li>
+                    <li><span class="check">✓</span> Monthly performance reports & optimization</li>
+                </ul>
+                <a href="https://wa.me/message/6NJCLYVRICDYN1" class="pricing-btn">Hire Now</a>
+            </div>
+
+            <!-- Performance-Based -->
+            <div class="pricing-card">
+                <div class="icon">
+                    <img src="img/performance.png" alt="Performance Based Icon">
+                </div>
+                <h3>Commission / Performance-Based</h3>
+                <ul>
+                    <li><span class="check">✓</span> No results, no payment – simple as that</li>
+                    <li><span class="check">✓</span> Ideal for startups and scaling brands</li>
+                    <li><span class="check">✓</span> ROI-focused, incentivized partnership</li>
+                    <li><span class="check">✓</span> Full service: ads, email & CRO</li>
+                    <li><span class="check">✓</span> Our success = your growth</li>
+                </ul>
+                <a href="https://wa.me/message/6NJCLYVRICDYN1" class="pricing-btn">Apply for Partnership</a>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Pricing Section Styling */
+        .pricing-section {
+            background-color: #000000;
+            /* Extreme black background */
+            color: #ADD8E6;
+            /* Light blue text color */
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Section Header */
+        .section-header h2 {
+            font-size: 3.5em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            color: #FFA500;
+            /* Orange for title */
+            margin-bottom: 15px;
+            text-shadow: 0px 4px 10px rgba(255, 160, 122, 0.6);
+            /* Title shadow */
+        }
+
+        .section-header p {
+            font-size: 1.3em;
+            color: #ADD8E6;
+            /* Light blue subtitle */
+            max-width: 700px;
+            margin: 0 auto 50px;
+            line-height: 1.6;
+        }
+
+        /* Pricing Container */
+        .pricing-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        /* Pricing Card Styling */
+        .pricing-card {
+            background: linear-gradient(145deg, #222222, #1a1a1a);
+            /* Dark gradient background */
+            border-radius: 20px;
+            padding: 40px 25px;
+            max-width: 350px;
+            box-shadow: 0px 15px 30px rgba(173, 216, 230, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+            border: 3px solid transparent;
+            position: relative;
+            text-align: left;
+            overflow: hidden;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0px 25px 45px rgba(173, 216, 230, 0.6);
+            border: 3px solid #ADD8E6;
+            /* Light blue border on hover */
+        }
+
+        /* Featured Plan Card */
+        .pricing-card.featured {
+            border: 3px solid #FFA500;
+            /* Orange border for featured plan */
+            background: linear-gradient(145deg, #333333, #222222);
+            /* Brighter gradient for featured plan */
+            transform: scale(1.05);
+            /* Slightly larger */
+            box-shadow: 0px 20px 40px rgba(255, 165, 0, 0.6);
+            /* Orange shadow */
+        }
+
+        /* Plan Icon */
+        .icon img {
+            width: 60px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .pricing-card:hover .icon img {
+            transform: rotate(15deg) scale(1.1);
+            /* Rotate and scale on hover */
+        }
+
+        /* Pricing Card Title */
+        .pricing-card h3 {
+            font-size: 2em;
+            color: #FFA500;
+            /* Orange for plan title */
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        /* Price Styling */
+        .price {
+            font-size: 3em;
+            color: #FFFFFF;
+            /* White price text */
+            margin: 20px 0;
+        }
+
+        .price span {
+            font-size: 0.6em;
+            color: #ADD8E6;
+            /* Light blue for duration */
+        }
+
+        /* Features List */
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+        }
+
+        .pricing-card ul li {
+            font-size: 1.1em;
+            margin-bottom: 12px;
+            font-family: 'Roboto', sans-serif;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        /* Check and Cancel Styling */
+        .check {
+            color: #32CD32;
+            /* Green for check */
+            margin-right: 8px;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .cancel {
+            color: #FF6347;
+            /* Red for cancel */
+            margin-right: 8px;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* CTA Button */
+        .pricing-btn {
+            display: inline-block;
+            font-size: 1.1em;
+            color: #000;
+            background-color: #ADD8E6;
+            /* Light blue button */
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            box-shadow: 0px 6px 20px rgba(255, 165, 0, 0.6);
+            /* Orange shadow */
+            margin-top: 15px;
+        }
+
+        .pricing-btn:hover {
+            background-color: #FFA500;
+            /* Orange on hover */
+            color: #000;
+            box-shadow: 0px 8px 25px rgba(255, 215, 0, 0.8);
+            /* Enhanced shadow on hover */
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .pricing-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .pricing-card {
+                max-width: 90%;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- E-commerce Motivational Quote Carousel Section -->
+    <section class="quote-slider-section">
+        <div class="quote-carousel">
+            <div class="quote-slide">
+                <p class="quote-text">"E-commerce is not just buying and selling; it’s a journey of building
+                    relationships."</p>
+                <p class="quote-author">– Unknown</p>
+            </div>
+            <div class="quote-slide">
+                <p class="quote-text">"Your brand is a story unfolding across all customer touch points."</p>
+                <p class="quote-author">– Jonah Sachs</p>
+            </div>
+            <div class="quote-slide">
+                <p class="quote-text">"Make every detail perfect and limit the number of details to perfect."</p>
+                <p class="quote-author">– Jack Dorsey</p>
+            </div>
+            <div class="quote-slide">
+                <p class="quote-text">"The best marketing doesn't feel like marketing."</p>
+                <p class="quote-author">– Tom Fishburne</p>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Quote Slider Section Styling */
+        .quote-slider-section {
+            background-color: #000000;
+            /* Extreme black background */
+            color: #ADD8E6;
+            /* Light blue text color */
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            perspective: 1000px;
+            /* Perspective for 3D effect */
+            overflow: hidden;
+        }
+
+        /* Carousel Container */
+        .quote-carousel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            transition: transform 1s ease;
+            /* Smooth transition */
+        }
+
+        /* Quote Slide Styling */
+        .quote-slide {
+            position: absolute;
+            width: 280px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(173, 216, 230, 0.4);
+            /* Light blue shadow */
+            border-radius: 15px;
+            background-color: rgba(26, 26, 26, 0.9);
+            /* Slightly transparent dark background */
+            text-align: center;
+            backface-visibility: hidden;
+            opacity: 0;
+            /* Hidden by default */
+            transition: opacity 0.8s ease, transform 1s ease;
+            /* Smooth fade and rotation */
+        }
+
+        /* Individual Faces of the Carousel */
+        .quote-slide:nth-child(1) {
+            transform: rotateY(0deg) translateZ(300px);
+        }
+
+        .quote-slide:nth-child(2) {
+            transform: rotateY(90deg) translateZ(300px);
+        }
+
+        .quote-slide:nth-child(3) {
+            transform: rotateY(180deg) translateZ(300px);
+        }
+
+        .quote-slide:nth-child(4) {
+            transform: rotateY(270deg) translateZ(300px);
+        }
+
+        /* Quote Text */
+        .quote-text {
+            font-size: 1.6em;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #FFFFFF;
+            text-shadow: 0px 0px 8px rgba(173, 216, 230, 0.8);
+            /* Glow effect */
+        }
+
+        .quote-author {
+            font-size: 1.2em;
+            font-family: 'Roboto', sans-serif;
+            color: #FFA07A;
+            /* Orange shade for author */
+        }
+
+        /* Active Slide Styling */
+        .quote-slide.active {
+            opacity: 1;
+            /* Fully visible */
+        }
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const slides = document.querySelectorAll('.quote-slide');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active');
+                    slide.style.opacity = i === index ? '1' : '0';
+                });
+                document.querySelector('.quote-carousel').style.transform = `rotateY(-${index * 90}deg)`;
+            }
+
+            function nextQuote() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+
+            // Automatically change quotes every 3 seconds
+            setInterval(nextQuote, 3000);
+
+            // Initial display
+            showSlide(currentSlide);
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Partners Showcase Section -->
+    <section class="partners-section">
+        <h2>Our Trusted Partners</h2>
+        <div class="partners-container">
+            <div class="partner">
+                <img src="img/shop.png" alt="Shopify">
+            </div>
+            <div class="partner">
+                <img src="img/wix.png" alt="Wix">
+            </div>
+            <div class="partner">
+                <img src="img/word.png" alt="WordPress">
+            </div>
+            <div class="partner">
+                <img src="img/gg.png" alt="Google">
+            </div>
+            <div class="partner">
+                <img src="img/mail.png" alt="Mailchimp">
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Partners Section Styling */
+        .partners-section {
+            background-color: #000000;
+            /* Extreme black background */
+            color: #FFFFFF;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .partners-section h2 {
+            font-size: 3.5em;
+            margin-bottom: 60px;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            color: #ADD8E6;
+            /* Light blue */
+            letter-spacing: 2px;
+            text-shadow: 0px 0px 20px rgba(173, 216, 230, 0.7), 0px 0px 35px rgba(255, 160, 122, 0.5);
+            animation: fadeInTitle 1.5s ease-in-out;
+        }
+
+        .partners-section h2::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 5px;
+            background: #FFA500;
+            /* Orange underline */
+            margin: 15px auto 0;
+            border-radius: 5px;
+            animation: expandUnderline 1s ease-in-out;
+        }
+
+        /* Partners Container */
+        .partners-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        /* Partner Card Styling */
+        .partner {
+            width: 160px;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1a1a1a;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .partner img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        /* Hover Effects */
+        .partner:hover {
+            transform: scale(1.1);
+            /* Scale up effect */
+            box-shadow: 0px 15px 40px rgba(255, 165, 0, 0.6), 0px 0px 25px rgba(173, 216, 230, 0.5);
+            /* Glow shadow */
+        }
+
+        .partner:hover img {
+            transform: scale(1.15);
+            /* Slight zoom effect */
+        }
+
+        /* Title and Underline Animations */
+        @keyframes fadeInTitle {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes expandUnderline {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100px;
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .partners-section h2 {
+                font-size: 2.8em;
+            }
+
+            .partners-container {
+                gap: 30px;
+            }
+
+            .partner {
+                width: 130px;
+                height: 130px;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Frequently Asked Questions Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-card">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h3>What is e-commerce?</h3>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>E-commerce refers to the buying and selling of goods or services using the internet, and the
+                            transfer of money and data to execute these transactions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-card">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h3>How can I start an online store?</h3>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To start an online store, choose a niche, select an e-commerce platform, set up your website,
+                            add products, and implement a marketing strategy to attract customers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-card">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h3>What payment methods can I accept?</h3>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can accept various payment methods including credit/debit cards, PayPal, bank transfers,
+                            and digital wallets, depending on your e-commerce platform's capabilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-card">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h3>How do I handle shipping for my online store?</h3>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Shipping can be handled by integrating shipping providers, setting up shipping rates based on
+                            weight or location, and offering various delivery options to customers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-card">
+                    <div class="faq-question" onclick="toggleAnswer(this)">
+                        <h3>Can I sell on multiple platforms?</h3>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can sell on multiple platforms such as your own website, Amazon, eBay, and social
+                            media channels to expand your reach and customer base.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* FAQ Section Styling */
+        .faq-section {
+            background-color: #000000;
+            /* Extreme black background */
+            color: #ADD8E6;
+            /* Light blue text color */
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            /* Rounded corners for the section */
+        }
+
+        .faq-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            /* Spacing below the heading */
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .faq-card {
+            perspective: 1000px;
+            /* Perspective for 3D effect */
+            margin-bottom: 20px;
+            /* Space between FAQ items */
+        }
+
+        .faq-question {
+            background-color: #222222;
+            /* Dark background for questions */
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            /* Rounded corners for questions */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            /* Position for the arrow */
+            overflow: hidden;
+        }
+
+        .faq-answer {
+            display: none;
+            /* Hidden by default */
+            padding: 15px;
+            background-color: #333333;
+            /* Darker background for answers */
+            border-radius: 10px;
+            /* Rounded corners for answers */
+            margin-top: 10px;
+            /* Space above answers */
+            transform: translateZ(0);
+            /* Ensure proper 3D transformation */
+        }
+
+        .arrow {
+            font-size: 1.5em;
+            transition: transform 0.3s ease;
+            position: absolute;
+            /* Position the arrow */
+            right: 15px;
+            /* Align to the right */
+            top: 15px;
+            /* Center vertically */
+        }
+
+        /* 3D flip effect on hover */
+        .faq-question:hover {
+            transform: translateY(-5px) scale(1.05);
+            /* Slight lift effect */
+            box-shadow: 0 4px 20px rgba(173, 216, 230, 0.5);
+            /* Light blue shadow on hover */
+        }
+
+        /* Arrow rotation on active */
+        .faq-question.active .arrow {
+            transform: rotate(180deg);
+            /* Rotate arrow on open */
+        }
+    </style>
+
+    <script>
+        function toggleAnswer(question) {
+            const answer = question.nextElementSibling;
+            const arrow = question.querySelector('.arrow');
+
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+                question.classList.remove('active');
+            } else {
+                answer.style.display = "block";
+                question.classList.add('active');
+            }
+        }
+
+        // Automatically close any open answers on page load
+        document.querySelectorAll('.faq-answer').forEach(answer => {
+            answer.style.display = 'none';
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 3 Column Video Section -->
+    <section class="video-section">
+        <h2>Our Video Gallery</h2>
+        <div class="video-container">
+            <div class="video-column">
+                <div class="video-card">
+                    <div class="video-inner">
+                        <video controls>
+                            <source src="img/vid1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Sales 1</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="video-column">
+                <div class="video-card">
+                    <div class="video-inner">
+                        <video controls>
+                            <source src="img/vid2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Sales 2</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="video-column">
+                <div class="video-card">
+                    <div class="video-inner">
+                        <video controls>
+                            <source src="img/vid3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Sales 3</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="video-column">
+                <div class="video-card">
+                    <div class="video-inner">
+                        <video controls>
+                            <source src="img/vid4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Sales 4</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="video-column">
+                <div class="video-card">
+                    <div class="video-inner">
+                        <video controls>
+                            <source src="img/vid5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Sales 5</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-column">
+                <div class="video-card">
+                    <div class="video-inner">
+                        <video controls>
+                            <source src="img/vid6.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Sales 6</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-column">
+                <div class="video-card">
+                    <div class="video-inner">
+                        <video controls>
+                            <source src="img/vid7.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Sales 7</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <style>
+        /* Video Section Styling */
+        .video-section {
+            background-color: #000000;
+            /* Extreme black background */
+            color: #ADD8E6;
+            /* Light blue text color */
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .video-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            /* Spacing below the heading */
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+            /* Animation for the heading */
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* Allows columns to wrap on smaller screens */
+            gap: 20px;
+            /* Space between columns */
+        }
+
+        .video-column {
+            flex: 1 1 calc(33.333% - 20px);
+            /* Three columns with gap adjustment */
+            perspective: 1000px;
+            /* Perspective for 3D effect */
+        }
+
+        .video-card {
+            position: relative;
+            background-color: #222222;
+            /* Dark background for video column */
+            border-radius: 10px;
+            /* Rounded corners */
+            overflow: hidden;
+            /* Ensures child elements respect the border radius */
+            transition: transform 0.3s ease;
+            /* Transition for hover effect */
+            box-shadow: 0 0 20px rgba(173, 216, 230, 0.5);
+            /* Soft shadow */
+        }
+
+        .video-inner {
+            position: relative;
+            transition: transform 0.5s;
+            /* Transition for 3D effect */
+        }
+
+        .video-column:hover .video-inner {
+            transform: rotateY(10deg);
+            /* Slight rotation for a 3D effect */
+        }
+
+        video {
+            width: 100%;
+            /* Full width */
+            height: 400px;
+            /* Set height to mimic TikTok video aspect ratio */
+            object-fit: cover;
+            /* Cover the area without distortion */
+            border-radius: 10px 10px 0 0;
+            /* Rounded corners for the top */
+        }
+
+        h3 {
+            padding: 15px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5em;
+            /* Title size */
+            margin: 0;
+            /* Remove default margin */
+            text-align: center;
+            /* Center align title */
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .video-column {
+                flex: 1 1 calc(50% - 20px);
+                /* Two columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-column {
+                flex: 1 1 100%;
+                /* Single column on very small screens */
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 3D Glitch Text Effect Section -->
+    <section class="glitch-text-section">
+        <h1 class="glitch-text">Innovate Fearlessly</h1>
+    </section>
+
+    <style>
+        /* Glitch Text Section Styling */
+        .glitch-text-section {
+            background-color: #000000;
+            /* Extreme black background */
+            padding: 100px 20px;
+            text-align: center;
+            overflow: hidden;
+            /* Prevent overflow on small screens */
+            perspective: 1000px;
+            /* Perspective for 3D depth */
+        }
+
+        /* Glitch Text Styling */
+        .glitch-text {
+            font-size: 6em;
+            /* Large font size for impact */
+            font-family: 'Poppins', sans-serif;
+            /* Modern, bold font */
+            font-weight: 700;
+            color: #FFFFFF;
+            /* White base color */
+            position: relative;
+            display: inline-block;
+            animation: glitch 2s infinite, pulse-glow 1.5s infinite;
+            /* Main glitch and pulse-glow animations */
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            transform-style: preserve-3d;
+            /* Preserve 3D for perspective */
+        }
+
+        /* 3D Layer Effects */
+        .glitch-text::before,
+        .glitch-text::after {
+            content: "Innovate Fearlessly";
+            /* Duplicate text content */
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: transparent;
+            overflow: hidden;
+            clip: rect(0, 900px, 0, 0);
+            /* Define clipped area for glitch */
+            animation: glitch-layer 1.8s infinite ease-in-out;
+            transform: translateZ(-20px) scale(1.1);
+            /* Add 3D depth */
+        }
+
+        /* Red 3D Glitch Layer */
+        .glitch-text::before {
+            color: #FF3D3D;
+            /* Bright red for contrast */
+            transform: translate(-3px, 3px) translateZ(-20px) scale(1.1);
+            animation: glitch-layer 1.5s infinite ease-in-out;
+        }
+
+        /* Cyan 3D Glitch Layer */
+        .glitch-text::after {
+            color: #00E6E6;
+            /* Bright cyan for contrast */
+            transform: translate(3px, -3px) translateZ(-20px) scale(1.1);
+            animation: glitch-layer-2 1.7s infinite ease-in-out;
+        }
+
+        /* Keyframes for Main Glitch Animation */
+        @keyframes glitch {
+
+            0%,
+            100% {
+                transform: translate(0);
+            }
+
+            10%,
+            30%,
+            50% {
+                transform: translate(-3px, 3px) scale(1.05) rotateX(10deg);
+            }
+
+            20%,
+            40%,
+            60% {
+                transform: translate(3px, -3px) scale(1.05) rotateY(10deg);
+            }
+
+            70%,
+            90% {
+                transform: translate(-2px, 2px) scale(1.05) rotateX(-5deg);
+            }
+        }
+
+        /* Keyframes for Glitch Layers */
+        @keyframes glitch-layer {
+            0% {
+                clip: rect(15px, 9999px, 20px, 0);
+            }
+
+            25% {
+                clip: rect(85px, 9999px, 80px, 0);
+            }
+
+            50% {
+                clip: rect(15px, 9999px, 30px, 0);
+            }
+
+            75% {
+                clip: rect(45px, 9999px, 40px, 0);
+            }
+
+            100% {
+                clip: rect(10px, 9999px, 5px, 0);
+            }
+        }
+
+        @keyframes glitch-layer-2 {
+            0% {
+                clip: rect(10px, 9999px, 5px, 0);
+            }
+
+            25% {
+                clip: rect(55px, 9999px, 50px, 0);
+            }
+
+            50% {
+                clip: rect(25px, 9999px, 30px, 0);
+            }
+
+            75% {
+                clip: rect(70px, 9999px, 65px, 0);
+            }
+
+            100% {
+                clip: rect(10px, 9999px, 5px, 0);
+            }
+        }
+
+        /* Pulse Glow Effect */
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 61, 61, 0.5), 0 0 30px rgba(0, 230, 230, 0.7);
+            }
+
+            50% {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 61, 61, 0.7), 0 0 60px rgba(0, 230, 230, 1);
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .glitch-text {
+                font-size: 4em;
+                /* Reduced font size for tablets */
+                letter-spacing: 8px;
+            }
+
+            .glitch-text-section {
+                padding: 80px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .glitch-text {
+                font-size: 2.5em;
+                /* Further reduced for mobile */
+                letter-spacing: 5px;
+            }
+
+            .glitch-text-section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Advanced Image and Text Section -->
+    <section class="image-text-section">
+        <div class="image-container">
+            <img src="img/200.png" alt="Featured Image" class="featured-image">
+        </div>
+        <div class="text-container">
+            <h2>Explore Sales funnel Strategies</h2>
+            <p>Did you know that over 79% of leads don’t convert right away? That’s where a well-crafted sales funnel
+                makes all the difference. A sales funnel takes potential customers on a journey, guiding them
+                step-by-step from initial interest to final purchase, and even beyond. By setting up stages that capture
+                attention, nurture curiosity, and build trust, you’re helping people feel confident and informed in
+                their decision to buy. From awareness-boosting content and engaging follow-ups to personalized offers,
+                each step in the funnel is designed to keep your audience engaged. The result? A smoother path to sales
+                and stronger customer loyalty, ultimately leading to higher conversion rates and sustainable growth for
+                your business.</p>
+            <a href="https://wa.me/message/6NJCLYVRICDYN1" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <style>
+        /* Image and Text Section Styling */
+        .image-text-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 20px;
+            background-color: #1a1a1a;
+            /* Dark background for contrast */
+            color: #ffffff;
+            gap: 30px;
+            perspective: 1000px;
+            /* Perspective for 3D effect */
+        }
+
+        /* Image Container Styling */
+        .image-container {
+            flex: 1;
+            transform: translateZ(0);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            /* Smooth hover effects */
+        }
+
+        .image-container:hover {
+            transform: scale(1.05) translateZ(10px);
+            /* Hover zoom and depth */
+            box-shadow: 0 10px 30px rgba(173, 216, 230, 0.4);
+            /* Soft shadow */
+        }
+
+        .featured-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            /* Rounded corners */
+        }
+
+        /* Text Container Styling */
+        .text-container {
+            flex: 1;
+            transform: translateZ(0);
+            padding: 20px;
+            background: #292929;
+            /* Slightly darker background for text */
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            /* Soft shadow for depth */
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .text-container h2 {
+            font-size: 2.5em;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .text-container p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* Call-to-Action Button Styling */
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1em;
+            font-weight: 600;
+            color: #000000;
+            background-color: #ADD8E6;
+            /* Light blue button color */
+            border: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 8px 15px rgba(173, 216, 230, 0.3);
+            /* Button shadow for depth */
+        }
+
+        .cta-button:hover {
+            background-color: #FFA07A;
+            /* Change color on hover */
+            transform: translateY(-3px);
+            /* Lift effect on hover */
+            box-shadow: 0 12px 20px rgba(255, 160, 122, 0.4);
+            /* Intensify shadow */
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .image-text-section {
+                flex-direction: column;
+                padding: 40px 20px;
+                gap: 20px;
+            }
+
+            .text-container h2 {
+                font-size: 2em;
+            }
+
+            .text-container p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text-container h2 {
+                font-size: 1.8em;
+            }
+
+            .text-container p {
+                font-size: 0.9em;
+            }
+
+            .cta-button {
+                padding: 10px 25px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+
+
+
+
+
+
+    <!-- Contact Us Section -->
+    <section class="contact-section">
+        <h2>Stay Connected</h2>
+        <p class="contact-message">Our team of skilled developers and support experts spans 15 trusted countries,
+            ensuring you receive world-class strategies and tips to boost your online store. With a presence in the
+            United States, United Kingdom, Australia, India, Nigeria, United Arab Emirates, Germany, Pakistan, Canada,
+            Netherlands, Ukraine, Brazil, Singapore, South Africa, and Sweden, we combine global expertise with local
+            insights to deliver exceptional results. </p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100088819762323" class="social-link facebook"
+                title="Follow us on Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link twitter" title="Follow us on Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link instagram" title="Follow us on Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link linkedin" title="Connect with us on LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link youtube" title="Subscribe to our YouTube channel">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <p class="contact-location">📍 London, United Kingdom</p>
+    </section>
+
+    <style>
+        /* Contact Us Section Styling */
+        .contact-section {
+            background-color: #1a1a1a;
+            /* Dark background */
+            padding: 100px 20px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            /* Section shadow for depth */
+        }
+
+        .contact-section h2 {
+            font-size: 2.5em;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .contact-message {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .social-link {
+            font-size: 2em;
+            color: #ffffff;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            background-color: #292929;
+            /* Dark circle background */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+            /* Shadow for depth */
+            transform-style: preserve-3d;
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px) rotateY(360deg) scale(1.1);
+            /* Lift, rotate, and scale effect on hover */
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+            /* Light shadow on hover */
+        }
+
+        /* Specific Icon Colors */
+        .facebook:hover {
+            color: #3b5998;
+        }
+
+        .twitter:hover {
+            color: #1da1f2;
+        }
+
+        .instagram:hover {
+            color: #e1306c;
+        }
+
+        .linkedin:hover {
+            color: #0077b5;
+        }
+
+        .youtube:hover {
+            color: #ff0000;
+        }
+
+        /* Location Text */
+        .contact-location {
+            font-size: 1.1em;
+            font-style: italic;
+            margin-top: 20px;
+            color: #ADD8E6;
+            animation: glow 1.5s infinite alternate;
+            /* Glow animation for location */
+        }
+
+        /* Glow Animation for Location */
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(173, 216, 230, 0.7), 0 0 20px rgba(173, 216, 230, 0.4);
+            }
+
+            to {
+                text-shadow: 0 0 20px rgba(173, 216, 230, 1), 0 0 30px rgba(173, 216, 230, 0.6);
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .contact-section h2 {
+                font-size: 2em;
+            }
+
+            .social-link {
+                font-size: 1.8em;
+                width: 50px;
+                height: 50px;
+            }
+
+            .contact-message {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-section h2 {
+                font-size: 1.8em;
+            }
+
+            .social-link {
+                font-size: 1.5em;
+                width: 45px;
+                height: 45px;
+            }
+
+            .contact-message {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+
+    <!-- Font Awesome Icons (for social media icons) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="service.html">Services</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Ecommark Agency. All rights reserved.</p>
+    </footer>
+
+    <!-- Font Awesome for Social Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Toggle Menu JavaScript -->
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

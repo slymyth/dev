@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotlight Agency</title>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ADD8E6;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: #000000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.15);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .header:hover {
+            transform: translateY(-2px);
+            background-color: rgba(0, 0, 0, 0.95);
+        }
+
+        /* Centered Logo with Scale and Glow Effect */
+        .logo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .logo img {
+            height: 50px;
+            transition: transform 0.6s ease, box-shadow 0.6s ease;
+        }
+        .logo img:hover {
+            transform: rotate(360deg) scale(1.15);
+            box-shadow: 0px 0px 20px rgba(173, 216, 230, 0.6);
+        }
+
+        /* Navigation Menu */
+        .nav-menu {
+            display: flex;
+            flex: 2;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .nav-menu a {
+            font-size: 18px;
+            color: #ADD8E6;
+            padding: 5px 10px;
+            text-decoration: none; /* Remove underline */
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .nav-menu a:hover {
+            color: #FFA07A;
+            transform: scale(1.05) translateY(-2px);
+        }
+
+        /* Get Started Button */
+        .get-started {
+            background-color: #ADD8E6;
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s ease;
+            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.5);
+        }
+        .get-started:hover {
+            background-color: #FFA07A;
+            color: #000;
+            transform: translateY(-4px);
+            box-shadow: 0px 8px 30px rgba(255, 160, 122, 0.7);
+        }
+
+        /* Mobile Toggle Menu */
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            color: #ADD8E6;
+            cursor: pointer;
+        }
+
+        /* Responsive Header */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.95);
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 15px;
+                border-radius: 0 0 8px 8px;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+                flex: 1;
+                justify-content: flex-start;
+            }
+            .logo {
+                order: 1;
+                flex: 2;
+                justify-content: center;
+            }
+            .get-started {
+                order: 3;
+                justify-content: flex-end;
+            }
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #000000;
+            padding: 50px 20px;
+            color: #ADD8E6;
+            text-align: center;
+            border-top: 1px solid rgba(173, 216, 230, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            font-size: 1.1em;
+            text-decoration: none; /* Remove underline */
+            color: #ADD8E6;
+            position: relative;
+            transition: color 0.3s, transform 0.3s;
+            padding: 5px;
+        }
+        .footer-links a:hover {
+            color: #FFA07A;
+            transform: scale(1.1);
+        }
+
+        /* Social Icons with Glow and Scale Effect */
+        .social-icons {
+            margin: 30px 0;
+        }
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 24px;
+            color: #ADD8E6;
+            text-decoration: none; /* Remove underline */
+            transition: transform 0.3s, color 0.3s, box-shadow 0.3s ease;
+            padding: 12px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 6px 20px rgba(173, 216, 230, 0.4);
+        }
+        .social-icons a:hover {
+            color: #FFA07A;
+            transform: scale(1.3);
+            box-shadow: 0px 10px 30px rgba(255, 160, 122, 0.7);
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div> <!-- Toggle Menu Icon on Left -->
+    <div class="logo">
+        <img src="/img/logo.png" alt="Logo"> <!-- Centered Logo -->
+    </div>
+    <nav class="nav-menu" id="navMenu">
+        <a href="/index.html">Home</a>
+        <a href="/service.html">Services</a>
+        <a href="/pastwork.html">Portfolio</a>
+        <a href="/about.html">About Us</a>
+        <a href="/checker.html">Website Analyzer</a>
+        <a href="/start.html">Contact</a>
+    </nav>
+    <a href="/start.html" class="get-started">Get Started</a> <!-- "Get Started" Button on Right -->
+</header>
+
+
+
+
+
+    <!-- Blog Preview Page -->
+<section class="blog-preview-page">
+    <!-- Hero Section -->
+    <div class="blog-hero">
+        <h1>Blog Post Title Here</h1>
+        <p class="hero-subtitle">Published on [Date] by [Author Name]</p>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="blog-content-container">
+        <!-- Blog Content -->
+        <article class="blog-content">
+            <img src="https://via.placeholder.com/800x400" alt="Blog Post Image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vehicula fringilla felis. Donec ut velit non nulla ultrices varius...</p>
+            <h2>Subheading</h2>
+            <p>Further details and content for the blog post. This can include images, quotes, lists, and other formatted content.</p>
+        </article>
+
+        <!-- Sidebar with Author Bio and Related Posts -->
+        <aside class="sidebar">
+            <!-- Author Bio -->
+            <div class="sidebar-widget author-bio">
+                <h3>About the Author</h3>
+                <img src="https://via.placeholder.com/100" alt="Author Image">
+                <p>[Author Name] is a passionate writer with experience in [Industry/Field]. Learn more about their work and expertise in this area.</p>
+            </div>
+
+            <!-- Related Posts -->
+            <div class="sidebar-widget related-posts">
+                <h3>Related Posts</h3>
+                <ul>
+                    <li><a href="#">Related Post 1</a></li>
+                    <li><a href="#">Related Post 2</a></li>
+                    <li><a href="#">Related Post 3</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Comments Section -->
+    <div class="comments-section">
+        <h2>Comments</h2>
+        <div class="comment">
+            <p><strong>Commenter Name:</strong> This is a sample comment on the blog post.</p>
+        </div>
+        <div class="comment">
+            <p><strong>Another Commenter:</strong> Another example of user interaction in the comments section.</p>
+        </div>
+
+        <!-- Add Comment Form -->
+        <form class="comment-form">
+            <h3>Leave a Comment</h3>
+            <textarea placeholder="Write your comment here..." required></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+    </div>
+</section>
+
+<!-- Font Awesome for Icons (Optional, if using icons) -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<style>
+    /* Blog Preview Page Styling */
+    .blog-preview-page {
+        background-color: #000000;
+        color: #ADD8E6;
+        font-family: 'Poppins', sans-serif;
+        padding: 50px 20px;
+    }
+
+    /* Hero Section with Glowing Border */
+    .blog-hero {
+        text-align: center;
+        margin-bottom: 60px;
+        position: relative;
+        padding: 40px 0;
+    }
+
+    .blog-hero h1 {
+        font-size: 3.5em;
+        color: #FFA07A;
+        text-shadow: 0px 0px 15px rgba(255, 160, 122, 0.7), 0px 0px 25px rgba(173, 216, 230, 0.5);
+        transition: transform 0.3s ease-in-out, text-shadow 0.3s ease;
+    }
+
+    .blog-hero h1:hover {
+        transform: translateY(-5px);
+        text-shadow: 0px 0px 20px rgba(255, 160, 122, 0.9), 0px 0px 30px rgba(173, 216, 230, 0.7);
+    }
+
+    .hero-subtitle {
+        font-size: 1.2em;
+        color: #ffffff;
+        margin-top: 10px;
+    }
+
+    /* Blog Content and Sidebar Layout */
+    .blog-content-container {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Blog Content Styling with Shadow */
+    .blog-content {
+        flex: 3;
+        background-color: #1a1a1a;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0px 15px 30px rgba(173, 216, 230, 0.3);
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-content:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 20px 40px rgba(173, 216, 230, 0.5);
+    }
+
+    .blog-content img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .blog-content:hover img {
+        transform: scale(1.05);
+    }
+
+    .blog-content h2 {
+        font-size: 1.8em;
+        color: #FFA07A;
+        margin-top: 20px;
+        text-shadow: 0px 0px 10px rgba(255, 160, 122, 0.5);
+    }
+
+    /* Sidebar with Advanced Shadows */
+    .sidebar {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sidebar-widget {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 15px 30px rgba(173, 216, 230, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .sidebar-widget:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 20px 40px rgba(173, 216, 230, 0.5);
+    }
+
+    .author-bio img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 15px 0;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebar-widget h3 {
+        font-size: 1.4em;
+        color: #FFA07A;
+        margin-bottom: 15px;
+        text-shadow: 0px 0px 5px rgba(255, 160, 122, 0.5);
+    }
+
+    /* Comments Section with Pop-Out Effect */
+    .comments-section {
+        max-width: 800px;
+        margin: 50px auto 0;
+        padding: 40px;
+        background-color: #1a1a1a;
+        border-radius: 15px;
+        box-shadow: 0px 10px 20px rgba(173, 216, 230, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .comments-section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 20px 40px rgba(173, 216, 230, 0.5);
+    }
+
+    .comments-section h2 {
+        font-size: 2em;
+        color: #FFA07A;
+        margin-bottom: 20px;
+        text-shadow: 0px 0px 10px rgba(255, 160, 122, 0.7);
+    }
+
+    .comment {
+        background-color: #111;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .comment p {
+        font-size: 1em;
+        color: #ffffff;
+    }
+
+    /* Comment Form */
+    .comment-form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .comment-form textarea {
+        padding: 15px;
+        border-radius: 10px;
+        border: none;
+        background-color: #333;
+        color: #ADD8E6;
+        font-size: 1em;
+    }
+
+    .comment-form button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #FFA07A;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .comment-form button:hover {
+        background-color: #ff8c69;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .blog-content-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="service.html">Services</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Dynamic Marketing Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Font Awesome for Social Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <!-- Toggle Menu JavaScript -->
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Our Past Work | Spotlight Agency - Shopify & Website Development Projects">
+    <meta name="description" content="Explore our past projects at Spotlight Agency, showcasing our expertise in Shopify and website development. See how we've helped businesses grow online.">
+    <meta name="keywords" content="Spotlight Agency, past work, portfolio, Shopify projects, website development, ecommerce solutions, client success stories, web design">
+    <meta name="author" content="Spotlight Agency">
+    <link rel="canonical" href="https://dynamicsalesagency.com.ng/past-work">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dynamicsalesagency.com.ng/pastwork.html">
+    <meta property="og:title" content="Our Past Work | Spotlight Agency - Shopify & Website Development Projects">
+    <meta property="og:description" content="Discover Spotlight Agency's successful Shopify and website development projects that have helped our clients achieve ecommerce growth.">
+    <meta property="og:image" content="https://dynamicsalesagency.com.ng/img/logo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dynamicsalesagency.com.ng/pastwork.html">
+    <meta property="twitter:title" content="Our Past Work | Spotlight Agency - Shopify & Website Development Projects">
+    <meta property="twitter:description" content="See how Spotlight Agency has empowered businesses through Shopify and website development. Check out our past projects and success stories.">
+    <meta property="twitter:image" content="https://dynamicsalesagency.com.ng/img/logo.png">
+
+    <!-- Structured Data Markup (JSON-LD) for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Spotlight Agency",
+      "url": "https://dynamicsalesagency.com.ng/pastwork.html",
+      "logo": "https://dynamicsalesagency.com.ng/img/logo.png",
+      "description": "Spotlight Agency showcases past projects in Shopify and website development, demonstrating expertise in ecommerce growth and web design.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+2347068033310",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://www.tiktok.com/@dynamicsalesagency",
+        "https://wa.me/2347068033310"
+      ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    
+    <title>Our Past Work | Spotlight Agency - Shopify & Website Development Projects</title>
+
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ADD8E6;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: #000000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.15);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .header:hover {
+            transform: translateY(-2px);
+            background-color: rgba(0, 0, 0, 0.95);
+        }
+
+        /* Centered Logo with Scale and Glow Effect */
+        .logo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .logo img {
+            height: 50px;
+            transition: transform 0.6s ease, box-shadow 0.6s ease;
+        }
+        .logo img:hover {
+            transform: rotate(360deg) scale(1.15);
+            box-shadow: 0px 0px 20px rgba(173, 216, 230, 0.6);
+        }
+
+        /* Navigation Menu */
+        .nav-menu {
+            display: flex;
+            flex: 2;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .nav-menu a {
+            font-size: 18px;
+            color: #ADD8E6;
+            padding: 5px 10px;
+            text-decoration: none; /* Remove underline */
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .nav-menu a:hover {
+            color: #FFA07A;
+            transform: scale(1.05) translateY(-2px);
+        }
+
+        /* Get Started Button */
+        .get-started {
+            background-color: #ADD8E6;
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s ease;
+            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.5);
+        }
+        .get-started:hover {
+            background-color: #FFA07A;
+            color: #000;
+            transform: translateY(-4px);
+            box-shadow: 0px 8px 30px rgba(255, 160, 122, 0.7);
+        }
+
+        /* Mobile Toggle Menu */
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            color: #ADD8E6;
+            cursor: pointer;
+        }
+
+        /* Responsive Header */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0.95);
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                padding: 15px;
+                border-radius: 0 0 8px 8px;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+                flex: 1;
+                justify-content: flex-start;
+            }
+            .logo {
+                order: 1;
+                flex: 2;
+                justify-content: center;
+            }
+            .get-started {
+                order: 3;
+                justify-content: flex-end;
+            }
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #000000;
+            padding: 50px 20px;
+            color: #ADD8E6;
+            text-align: center;
+            border-top: 1px solid rgba(173, 216, 230, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            font-size: 1.1em;
+            text-decoration: none; /* Remove underline */
+            color: #ADD8E6;
+            position: relative;
+            transition: color 0.3s, transform 0.3s;
+            padding: 5px;
+        }
+        .footer-links a:hover {
+            color: #FFA07A;
+            transform: scale(1.1);
+        }
+
+        /* Social Icons with Glow and Scale Effect */
+        .social-icons {
+            margin: 30px 0;
+        }
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 24px;
+            color: #ADD8E6;
+            text-decoration: none; /* Remove underline */
+            transition: transform 0.3s, color 0.3s, box-shadow 0.3s ease;
+            padding: 12px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 6px 20px rgba(173, 216, 230, 0.4);
+        }
+        .social-icons a:hover {
+            color: #FFA07A;
+            transform: scale(1.3);
+            box-shadow: 0px 10px 30px rgba(255, 160, 122, 0.7);
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div> <!-- Toggle Menu Icon on Left -->
+    <div class="logo">
+        <img src="/img/logo.png" alt="Logo"> <!-- Centered Logo -->
+    </div>
+    <nav class="nav-menu" id="navMenu">
+        <a href="/index.html">Home</a>
+        <a href="/service.html">Services</a>
+        <a href="/pastwork.html">Portfolio</a>
+        <a href="/about.html">About Us</a>
+        <a href="/checker.html">Website Analyzer</a>
+        <a href="/start.html">Contact</a>
+    </nav>
+    <a href="/start.html" class="get-started">Get Started</a> <!-- "Get Started" Button on Right -->
+</header>
+
+
+
+
+
+<!-- Featured Work Section -->
+<section class="featured-work-section">
+    <div class="section-header">
+        <h2>Our Featured Work</h2>
+        <p>A selection of our top projects, showcasing our expertise and dedication to excellence.</p>
+    </div>
+    <div class="featured-work-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="project-overlay"></div>
+            <img src="img/liveup.png" alt="Project 1 Image">
+            <h3>Liveupgood</h3>
+            <p>A dynamic e-commerce website designed for optimal performance and customer engagement.</p>
+            <a href="https://liveupgood.com" class="view-project-btn">View Project</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="project-overlay"></div>
+            <img src="img/fam.png" alt="Project 2 Image">
+            <h3>Famarketshop</h3>
+            <p>An immersive online store developed to establish a trustworthy and captivating brand presence.</p>
+            <a href="#" class="view-project-btn">View Project</a>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card">
+            <div class="project-overlay"></div>
+            <img src="img/true.png" alt="Project 3 Image">
+            <h3>Truegloryhair</h3>
+            <p>An SEO-optimized website built to attract organic traffic and foster customer loyalty.</p>
+            <a href="https://truegloryhair.com" class="view-project-btn">View Project</a>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-card">
+            <div class="project-overlay"></div>
+            <img src="img/culi.png" alt="Project 4 Image">
+            <h3>The Culinary Co.</h3>
+            <p>A visually appealing website crafted to showcase culinary expertise and increase audience reach.</p>
+            <a href="https://theculinaryco.co" class="view-project-btn">View Project</a>
+        </div>
+        <!-- Project 5 -->
+        <div class="project-card">
+            <div class="project-overlay"></div>
+            <img src="img/nanamacs.png" alt="Project 5 Image">
+            <h3>Nanamacs</h3>
+            <p>A responsive website offering a seamless shopping experience across devices.</p>
+            <a href="https://nanamacs.com" class="view-project-btn">View Project</a>
+        </div>
+        <!-- Project 6 -->
+        <div class="project-card">
+            <div class="project-overlay"></div>
+            <img src="img/insite.png" alt="Project 6 Image">
+            <h3>Insiteactive</h3>
+            <p>A website integrated with a custom analytics dashboard for effective business insights.</p>
+            <a href="https://www.insiteactive.com/en-us" class="view-project-btn">View Project</a>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    /* Featured Work Section Styling */
+    .featured-work-section {
+        background-color: #000000; /* Extreme black background */
+        color: #ADD8E6; /* Light blue text color */
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    /* Section Title and Subtitle */
+    .section-header h2 {
+        font-size: 3em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        color: #FFA500; /* Orange color for title */
+        margin-bottom: 10px;
+    }
+    .section-header p {
+        font-size: 1.2em;
+        font-family: 'Roboto', sans-serif;
+        color: #ADD8E6; /* Light blue for subtitle */
+        max-width: 600px;
+        margin: 0 auto 40px;
+        line-height: 1.6;
+    }
+
+    /* Featured Work Container */
+    .featured-work-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        justify-items: center;
+    }
+
+    /* Project Card Styling */
+    .project-card {
+        position: relative;
+        background-color: #1A1A1A; /* Dark background */
+        border-radius: 15px;
+        overflow: hidden;
+        max-width: 300px;
+        padding: 20px;
+        text-align: left;
+        box-shadow: 0px 10px 20px rgba(173, 216, 230, 0.5);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .project-card:hover {
+        transform: translateY(-10px) scale(1.05) rotateX(3deg) rotateY(3deg); /* 3D hover effect */
+        box-shadow: 0px 15px 30px rgba(173, 216, 230, 0.7);
+    }
+
+    /* Overlay Effect */
+    .project-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(145deg, rgba(255, 215, 0, 0.2), rgba(0, 191, 255, 0.2));
+        opacity: 0;
+        transition: opacity 0.4s;
+        z-index: 1;
+    }
+
+    .project-card:hover .project-overlay {
+        opacity: 1;
+    }
+
+    /* Project Image */
+    .project-card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.5);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .project-card img:hover {
+        transform: scale(1.07);
+        box-shadow: 0px 6px 25px rgba(255, 215, 0, 0.6); /* Golden shadow on hover */
+    }
+
+    /* Project Title */
+    .project-card h3 {
+        font-size: 1.5em;
+        color: #FFA500; /* Orange color for title */
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Project Description */
+    .project-card p {
+        font-size: 1em;
+        color: #ADD8E6;
+        margin-bottom: 15px;
+        line-height: 1.5;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* View Project Button */
+    .view-project-btn {
+        display: inline-block;
+        font-size: 1em;
+        color: #000;
+        background-color: #ADD8E6; /* Light blue background for button */
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        position: relative;
+        z-index: 2;
+        box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.6); /* Orange shadow */
+    }
+
+    .view-project-btn:hover {
+        background-color: #FFA500; /* Orange on hover */
+        color: #000;
+        box-shadow: 0px 6px 20px rgba(255, 215, 0, 0.8); /* Enhanced shadow on hover */
+    }
+
+    /* Responsive Layout for Smaller Screens */
+    @media (max-width: 768px) {
+        .featured-work-container {
+            grid-template-columns: 1fr;
+        }
+        .project-card {
+            max-width: 80%;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="service.html">Services</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 EcommarkMarketing Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Font Awesome for Social Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <!-- Toggle Menu JavaScript -->
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
