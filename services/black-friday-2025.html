@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Black Friday 2025 Growth Studio — Myth Digital Agency</title>
+  <meta name="description" content="Black Friday & Christmas 2025 Campaign Studio — SmartRank AI powered seasonal growth for Shopify & ecommerce." />
+
+  <!-- Reused site meta (keeps social preview consistent) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mythdigital.online/black-friday-2025.html" />
+  <meta property="og:title" content="Black Friday 2025 Growth Studio — Myth Digital Agency" />
+  <meta property="og:description" content="Smart seasonal systems that turn rush traffic into recurring revenue." />
+  <meta property="og:image" content="https://mythdigital.online/img/logo.png" />
+  <link rel="icon" href="img/logo.png" type="image/png" />
+
+  <style>
+    /* Base (kept consistent with your site) */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;font-family:'Poppins',sans-serif;background:#000;color:#ADD8E6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1200px;margin:0 auto;padding:20px}
+
+    /* Header (copied from index) */
+    .header{display:flex;align-items:center;justify-content:space-between;padding:15px 20px;background:#000;position:sticky;top:0;z-index:1000;box-shadow:0 4px 15px rgba(173,216,230,0.08)}
+    .menu-toggle{display:none;font-size:28px;color:#ADD8E6;cursor:pointer}
+    .logo{flex:1;display:flex;justify-content:center}
+    .logo img{height:50px;transition:transform .6s,box-shadow .6s}
+    .logo img:hover{transform:rotate(360deg) scale(1.15);box-shadow:0 0 20px rgba(173,216,230,.6)}
+    .nav-menu{display:flex;flex:2;justify-content:space-around;gap:20px}
+    .nav-menu a{font-size:18px;color:#ADD8E6;padding:5px 10px;transition:color .3s,transform .3s}
+    .nav-menu a:hover{color:#FFA07A;transform:scale(1.05) translateY(-2px)}
+    .get-started{background:#ADD8E6;color:#000;padding:8px 20px;border-radius:20px;font-weight:700;text-transform:uppercase}
+    @media(max-width:768px){.nav-menu{display:none;flex-direction:column;position:absolute;left:0;right:0;top:60px;background:rgba(0,0,0,.95);padding:15px}.menu-toggle{display:block}}
+
+    /* Hero with snowfall canvas & glow */
+    .hero-wrap{position:relative;overflow:hidden;height:70vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#00121a,#000)}
+    .hero-inner{position:relative;z-index:4;text-align:center;padding:20px}
+    .hero-title{font-size:2.4rem;color:#FFD700;font-weight:800;margin-bottom:12px;text-shadow:0 6px 20px rgba(255,215,0,0.06)}
+    .hero-sub{color:#ADD8E6;font-size:1.1rem;margin-bottom:18px;max-width:880px;margin-left:auto;margin-right:auto}
+    .hero-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn{padding:12px 18px;border-radius:12px;font-weight:700;text-decoration:none}
+    .btn-primary{background:#FFD700;color:#000}
+    .btn-ghost{background:transparent;border:1px solid rgba(173,216,230,.08);color:#ADD8E6}
+    .glow-overlay{position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen;opacity:.6;filter:blur(28px)}
+
+    /* SmartRank cards */
+    .features{display:flex;gap:20px;justify-content:space-between;margin-top:28px;flex-wrap:wrap}
+    .card{flex:1 1 30%;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:12px;backdrop-filter:blur(4px);box-shadow:0 12px 30px rgba(0,0,0,0.5);border:1px solid rgba(173,216,230,0.03)}
+    .card h4{color:#FFD700;margin-bottom:8px}
+    .card p{color:#ADD8E6;font-size:.98rem;line-height:1.4}
+
+    /* Timeline */
+    .timeline{display:flex;gap:18px;align-items:center;justify-content:space-between;margin:38px 0;flex-wrap:wrap}
+    .phase{flex:1 1 30%;background:#111;border-radius:12px;padding:18px;text-align:center;box-shadow:0 8px 20px rgba(173,216,230,0.06)}
+    .phase h3{color:#FFA07A;margin-bottom:10px}
+    .phase p{color:#ADD8E6}
+
+    /* Case studies */
+    .case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:20px}
+    .case{background:#111;padding:16px;border-radius:12px;display:flex;gap:12px;align-items:flex-start}
+    .case img{width:120px;height:80px;object-fit:cover;border-radius:8px}
+    .case h3{color:#FFD700;margin-bottom:6px;font-size:1.05rem}
+    .case p{color:#ADD8E6;font-size:.95rem;margin-bottom:8px}
+    .metrics{display:flex;gap:8px;flex-wrap:wrap}
+    .metric{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px;font-weight:700;color:#fff}
+
+    /* KPI counters */
+    .kpi-row{display:flex;gap:20px;justify-content:space-between;margin:30px 0;flex-wrap:wrap}
+    .kpi{flex:1 1 22%;background:linear-gradient(180deg,#111,#0e0e0e);padding:18px;border-radius:12px;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,0.4)}
+    .kpi .num{font-size:1.8rem;color:#FFD700;font-weight:800;display:block}
+    .kpi .label{color:#ADD8E6;margin-top:8px}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+
+    /* CTA section */
+    .cta-section{background:linear-gradient(180deg,rgba(255,215,0,0.06),rgba(255,215,0,0.02));padding:30px;border-radius:12px;margin:28px 0;text-align:center}
+    .cta-section h2{color:#000;margin-bottom:8px}
+    .cta-section p{color:#0b0b0b;margin-bottom:12px}
+
+    /* Footer copied, simplified */
+    footer.footer{background:#000;padding:40px 20px;text-align:center;color:#ADD8E6;border-top:1px solid rgba(173,216,230,0.08);margin-top:24px}
+
+    @media(max-width:900px){
+      .features{flex-direction:column}
+      .timeline{flex-direction:column}
+      .case-grid{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr 1fr}
+      .kpi-row{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Reused Header (same as your site) ===== -->
+  <header class="header">
+    <div class="menu-toggle" onclick="document.getElementById('navMenu').classList.toggle('active')">&#9776;</div>
+    <div class="logo"><a href="/"><img src="img/logo.png" alt="Myth Digital Agency logo"></a></div>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="service.html">Services</a>
+      <a href="pastwork.html">Portfolio</a>
+      <a href="about.html">About Us</a>
+      <a href="checker.html">Website Analyzer</a>
+      <a href="start.html">Contact</a>
+    </nav>
+    <a href="start.html" class="get-started">Get Started</a>
+  </header>
+  <!-- ===== end header ===== -->
+
+  <!-- ===== Hero (snow + glow canvas) ===== -->
+  <section class="hero-wrap" aria-label="Black Friday Studio hero">
+    <!-- snowfall canvas -->
+    <canvas id="snow" style="position:absolute;inset:0;z-index:1"></canvas>
+
+    <!-- soft glow overlay -->
+    <div class="glow-overlay" aria-hidden="true">
+      <svg width="100%" height="100%" preserveAspectRatio="none" style="display:block">
+        <defs>
+          <radialGradient id="g1"><stop offset="0%" stop-color="#FFD700" stop-opacity="0.06"/><stop offset="60%" stop-color="#FFA07A" stop-opacity="0.02"/></radialGradient>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#g1)"></rect>
+      </svg>
+    </div>
+
+    <div class="hero-inner container" style="z-index:4">
+      <h1 class="hero-title">Black Friday 2025 Growth Studio — <span style="color:#ADD8E6">Powered by SmartRank AI</span></h1>
+      <p class="hero-sub">We design, test, and automate seasonal sales systems that turn rush traffic into repeat buyers. Creative, funnels, automation — done with data.</p>
+
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://wa.me/message/6NJCLYVRICDYN1" target="_blank" rel="noopener">Book Free Audit</a>
+        <a class="btn btn-ghost" href="#case-studies">View Campaigns</a>
+        <a class="btn btn-ghost" href="/start.html?offer=holiday">Start Campaign</a>
+      </div>
+
+      <!-- SmartRank AI features -->
+      <div class="features" aria-hidden="false" style="margin-top:26px">
+        <div class="card">
+          <h4>AI-Powered Targeting</h4>
+          <p>Automatically identify high-intent audiences, test creatives at scale, and move budget to winning segments.</p>
+        </div>
+        <div class="card">
+          <h4>Predictive Product Ranking</h4>
+          <p>SmartRank predicts best-sellers for the season, surfaces winning bundles, and prioritizes high-margin offers.</p>
+        </div>
+        <div class="card">
+          <h4>Performance Optimization</h4>
+          <p>Automated bid & creative optimization, email flows that recover carts, and retargeting that converts window shoppers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container" id="main-content">
+
+    <!-- Timeline -->
+    <section aria-label="Strategy timeline" style="margin-top:18px">
+      <h2 style="color:#FFA07A;margin-bottom:12px">3-Phase Festive Growth Timeline</h2>
+      <div class="timeline">
+        <div class="phase">
+          <h3>Phase 1 — Audit & Research</h3>
+          <p>Technical & conversion audit, category testing, audience mapping, early-bird creative tests.</p>
+        </div>
+        <div class="phase">
+          <h3>Phase 2 — Launch & Scale</h3>
+          <p>High-velocity launches, dynamic offers, influencer seeding, and scaled paid funnels.</p>
+        </div>
+        <div class="phase">
+          <h3>Phase 3 — Optimize & Retarget</h3>
+          <p>Automated retargeting flows, product ranking adjustments, post-sale retention plays.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case studies -->
+    <section id="case-studies" aria-labelledby="case-title" style="margin-top:10px">
+      <h2 id="case-title" style="color:#FFD700;margin-bottom:12px">Campaign Studio — Sample Results</h2>
+      <div class="case-grid">
+        <!-- Liveupgood -->
+        <div class="case">
+          <img src="img/liveup.png" alt="Liveupgood" loading="lazy">
+          <div>
+            <h3>Liveupgood</h3>
+            <p>Goal: Maximize Black Friday sales while preserving margin.</p>
+            <div class="metrics">
+              <div class="metric">+320% Revenue</div>
+              <div class="metric">4.2x ROAS</div>
+              <div class="metric">+48% CVR</div>
+            </div>
+            <p style="margin-top:8px"><a class="btn btn-ghost" href="https://liveupgood.com" target="_blank" rel="noopener">View Project</a></p>
+          </div>
+        </div>
+
+        <!-- Truegloryhair -->
+        <div class="case">
+          <img src="img/true.png" alt="Truegloryhair" loading="lazy">
+          <div>
+            <h3>Truegloryhair</h3>
+            <p>Goal: Improve organic traffic & holiday conversions.</p>
+            <div class="metrics">
+              <div class="metric">+220% Organic Traffic</div>
+              <div class="metric">3.8x ROAS Paid</div>
+              <div class="metric">+52% Email CTR</div>
+            </div>
+            <p style="margin-top:8px"><a class="btn btn-ghost" href="https://truegloryhair.com" target="_blank" rel="noopener">View Project</a></p>
+          </div>
+        </div>
+
+        <!-- Wohlfühlprodukte -->
+        <div class="case">
+          <img src="img/500.png" alt="Wohlfühlprodukte" loading="lazy">
+          <div>
+            <h3>Wohlfühlprodukte</h3>
+            <p>Goal: Holiday product launches for European markets.</p>
+            <div class="metrics">
+              <div class="metric">+410% Holiday Revenue</div>
+              <div class="metric">5x Email Recovery</div>
+              <div class="metric">+35% AOV</div>
+            </div>
+            <p style="margin-top:8px"><a class="btn btn-ghost" href="https://www.wohlfuehlprodukte.com" target="_blank" rel="noopener">View Project</a></p>
+          </div>
+        </div>
+
+        <!-- The Culinary Co. -->
+        <div class="case">
+          <img src="img/culi.png" alt="The Culinary Co." loading="lazy">
+          <div>
+            <h3>The Culinary Co.</h3>
+            <p>Goal: Festive bundles & seasonal subscriptions.</p>
+            <div class="metrics">
+              <div class="metric">+280% Sales Lift</div>
+              <div class="metric">Repeat Purchase +22%</div>
+              <div class="metric">Subscription +8%</div>
+            </div>
+            <p style="margin-top:8px"><a class="btn btn-ghost" href="https://theculinaryco.co" target="_blank" rel="noopener">View Project</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPIs -->
+    <section aria-label="Result highlights" style="margin-top:18px">
+      <h2 style="color:#FFA07A;margin-bottom:12px">Holiday Performance Highlights</h2>
+      <div class="kpi-row">
+        <div class="kpi">
+          <span class="num" data-target="420">0</span><div class="label">Avg % Revenue Increase</div>
+        </div>
+        <div class="kpi">
+          <span class="num" data-target="4.2">0</span><div class="label">Average ROAS</div>
+        </div>
+        <div class="kpi">
+          <span class="num" data-target="52">0</span><div class="label">Avg Email CTR % Increase</div>
+        </div>
+        <div class="kpi">
+          <span class="num" data-target="35">0</span><div class="label">AOV Uplift %</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creative gallery -->
+    <section aria-label="Creative gallery" style="margin-top:18px">
+      <h2 style="color:#FFD700;margin-bottom:12px">Creative Gallery</h2>
+      <div class="gallery">
+        <img src="img/season-bf.jpg" alt="promo 1" loading="lazy" onerror="this.style.opacity=.3">
+        <img src="img/season-xmas.jpg" alt="promo 2" loading="lazy" onerror="this.style.opacity=.3">
+        <img src="img/holiday-banner.png" alt="promo 3" loading="lazy" onerror="this.style.opacity=.3">
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-label="Join accelerator" style="margin-top:28px">
+      <h2>Join the Holiday Accelerator</h2>
+      <p>Limited campaign spots. We run full holiday stacks — creative, funnels, ads, email & automation — backed by SmartRank AI.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:12px">
+        <a class="btn btn-primary" href="https://wa.me/message/6NJCLYVRICDYN1" target="_blank" rel="noopener">Book WhatsApp Audit</a>
+        <a class="btn btn-ghost" href="/start.html?offer=holiday">Apply to Accelerator</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Reused Footer (same as your site) ===== -->
+  <footer class="footer">
+    <div class="footer-links" style="display:flex;justify-content:center;gap:20px;margin-bottom:12px;flex-wrap:wrap">
+      <a href="#about">About</a>
+      <a href="service.html">Services</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p style="margin-top:12px;">&copy; 2025 Myth Digital Agency. All rights reserved.</p>
+  </footer>
+
+  <!-- Font Awesome (deferred) -->
+  <script defer src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Snowfall + counters + small interactive JS -->
+  <script>
+    // ---------- Snowfall Canvas ----------
+    (function() {
+      const canvas = document.getElementById('snow');
+      if(!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let w = canvas.width = window.innerWidth;
+      let h = canvas.height = window.innerHeight * 0.7; // limit to hero height
+      const flakes = [];
+      const count = Math.round(w / 12);
+
+      function rand(min,max){return Math.random()*(max-min)+min}
+      for(let i=0;i<count;i++){
+        flakes.push({x:rand(0,w),y:rand(0,h),r:rand(0.7,3.2),d:rand(0.5,1.5)});
+      }
+
+      function resize(){
+        w = canvas.width = window.innerWidth;
+        h = canvas.height = window.innerHeight * 0.7;
+      }
+      window.addEventListener('resize',resize);
+
+      function draw(){
+        ctx.clearRect(0,0,w,h);
+        ctx.fillStyle = 'rgba(255,255,255,0.85)';
+        for(let i=0;i<flakes.length;i++){
+          const f = flakes[i];
+          ctx.beginPath();
+          ctx.arc(f.x,f.y,f.r,0,Math.PI*2);
+          ctx.fillStyle = 'rgba(255,255,255,' + (0.2 + (f.r/4)) + ')';
+          ctx.fill();
+        }
+        update();
+        requestAnimationFrame(draw);
+      }
+
+      let angle=0;
+      function update(){
+        angle += 0.002;
+        for(let i=0;i<flakes.length;i++){
+          const f = flakes[i];
+          f.y += Math.pow(f.d,1.5) + 0.3;
+          f.x += Math.sin(angle + f.d) * 0.6;
+          if(f.y > h + 5){ f.y = -10; f.x = rand(0,w); }
+        }
+      }
+      draw();
+    })();
+
+    // ---------- Animated counters (on scroll into view) ----------
+    (function(){
+      const counters = document.querySelectorAll('.kpi .num');
+      let started = false;
+
+      function animateCounter(el, target, decimals=0) {
+        const duration = 1400;
+        const start = performance.now();
+        const initial = 0;
+        function step(now) {
+          const progress = Math.min((now - start) / duration, 1);
+          const value = initial + (target - initial) * progress;
+          el.textContent = (decimals>0) ? value.toFixed(decimals) : Math.round(value);
+          if(progress < 1) requestAnimationFrame(step);
+          else if(decimals===1) el.textContent = target.toFixed(1);
+        }
+        requestAnimationFrame(step);
+      }
+
+      function start() {
+        if(started) return;
+        const rect = document.querySelector('.kpi-row').getBoundingClientRect();
+        if(rect.top < window.innerHeight && rect.bottom > 0) {
+          started = true;
+          counters.forEach(el=>{
+            const raw = el.getAttribute('data-target');
+            // support decimal targets like 4.2
+            const target = raw.includes('.') ? parseFloat(raw) : parseInt(raw,10);
+            const decimals = raw.includes('.') ? 1 : 0;
+            animateCounter(el, target, decimals);
+          });
+        }
+      }
+      window.addEventListener('scroll', start);
+      window.addEventListener('load', start);
+      // also trigger shortly after load for users already down the page
+      setTimeout(start, 800);
+    })();
+
+    // ---------- lightweight accessibility helpers for toggles (if any) ----------
+    document.addEventListener('click', function(e){
+      const t = e.target;
+      if(t.matches('.btn-ghost') && t.hash) {
+        e.preventDefault();
+        document.querySelector(t.hash)?.scrollIntoView({behavior:'smooth'});
+      }
+    });
+
+    // push CTA clicks to dataLayer if present
+    document.querySelectorAll('a[href^="https://wa.me"], a[href*="start.html"]').forEach(el=>{
+      el.addEventListener('click', function(){
+        try{window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'holiday_cta',label:this.href});}catch(e){}
+      });
+    });
+  </script>
+
+</body>
+</html>
