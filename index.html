@@ -15,23 +15,23 @@
     <meta name="keywords"
         content="Myth Digital Agency, website development, Shopify development, ecommerce, online store, Shopify expert, Shopify website, web design, digital marketing, Nigeria">
     <meta name="author" content="Myth Digital Agency">
-    <link rel="canonical" href="https://ecommarkdigital.com/">
+    <link rel="canonical" href="https://mythdigital.online/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ecommarkdigital.com/">
+    <meta property="og:url" content="https://mythdigital.online/">
     <meta property="og:title" content="Myth Digital Agency | Expert Website & Shopify Development">
     <meta property="og:description"
         content="Explore expert website and Shopify development services by Myth Digital Agency to elevate your ecommerce presence.">
-    <meta property="og:image" content="https://ecommarkdigital.com/img/logo.png">
+    <meta property="og:image" content="https://mythdigital.online/img/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ecommarkdigital.com/">
+    <meta property="twitter:url" content="https://mythdigital.online/">
     <meta property="twitter:title" content="Myth Digital Agency | Website & Shopify Development">
     <meta property="twitter:description"
         content="Myth Digital Agency offers professional website development and Shopify solutions to boost your online store’s productivity.">
-    <meta property="twitter:image" content="https://ecommarkdigital.com/img/logo.png">
+    <meta property="twitter:image" content="https://mythdigital.online/img/logo.png">
 
     <!-- Structured Data Markup (JSON-LD) for Local Business -->
     <script type="application/ld+json">
@@ -39,8 +39,8 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Myth Digital Agency",
-      "url": "https://dynamicsalesagency.com.ng",
-      "logo": "https://ecommarkdigital.com/img/logo.png",
+      "url": "https://mythdigital.online",
+      "logo": "https://mythdigital.online/img/logo.png",
       "description": "Professional website development and Shopify solutions for ecommerce businesses.",
       "contactPoint": {
         "@type": "ContactPoint",
@@ -48,7 +48,7 @@
         "contactType": "Customer Service"
       },
       "sameAs": [
-        "https://www.tiktok.com/@dynamicsalesagency",
+        "https://www.tiktok.com/@mythdigital",
         "https://wa.me/message/6NJCLYVRICDYN1"
       ]
     }
@@ -56,10 +56,27 @@
 
     <!-- Favicon -->
     <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <title>Myth Digital Agency | Website & Shopify Development</title>
 
     <style>
+        :root {
+            color-scheme: dark;
+            --bg-primary: #000000;
+            --bg-surface: #000000;
+            --bg-elevated: #1A1A1A;
+            --text-primary: #ADD8E6;
+            --text-muted: #ADD8E6;
+            --accent: #ADD8E6;
+            --accent-strong: #FFA500;
+            --accent-warm: #FFA07A;
+            --accent-gold: #FFD700;
+            --shadow-soft: 0 20px 45px rgba(0, 0, 0, 0.45);
+        }
+
         /* General Reset */
         * {
             margin: 0;
@@ -67,10 +84,15 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #000000;
-            color: #ADD8E6;
+            font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
             overflow-x: hidden;
         }
 
@@ -80,17 +102,18 @@
             align-items: center;
             justify-content: space-between;
             padding: 15px 20px;
-            background-color: #000000;
+            background: rgba(11, 15, 25, 0.92);
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.15);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+            border-bottom: 1px solid rgba(148, 163, 184, 0.2);
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .header:hover {
-            transform: translateY(-2px);
-            background-color: rgba(0, 0, 0, 0.95);
+            transform: translateY(-1px);
+            background-color: rgba(11, 15, 25, 0.98);
         }
 
         /* Centered Logo with Scale and Glow Effect */
@@ -120,7 +143,7 @@
 
         .nav-menu a {
             font-size: 18px;
-            color: #ADD8E6;
+            color: var(--text-primary);
             padding: 5px 10px;
             text-decoration: none;
             /* Remove underline */
@@ -129,14 +152,14 @@
         }
 
         .nav-menu a:hover {
-            color: #FFA07A;
-            transform: scale(1.05) translateY(-2px);
+            color: var(--accent);
+            transform: translateY(-1px);
         }
 
         /* Get Started Button */
         .get-started {
-            background-color: #ADD8E6;
-            color: #000;
+            background-color: var(--accent);
+            color: #000000;
             padding: 8px 20px;
             border-radius: 20px;
             font-weight: bold;
@@ -144,14 +167,14 @@
             text-decoration: none;
             /* Remove underline */
             transition: background-color 0.3s ease, transform 0.3s, box-shadow 0.3s ease;
-            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.5);
+            box-shadow: 0 12px 25px rgba(173, 216, 230, 0.35);
         }
 
         .get-started:hover {
-            background-color: #FFA07A;
-            color: #000;
-            transform: translateY(-4px);
-            box-shadow: 0px 8px 30px rgba(255, 160, 122, 0.7);
+            background-color: var(--accent-strong);
+            color: #000000;
+            transform: translateY(-2px);
+            box-shadow: 0 18px 35px rgba(255, 160, 122, 0.4);
         }
 
         /* Mobile Toggle Menu */
@@ -167,7 +190,7 @@
             .nav-menu {
                 display: none;
                 flex-direction: column;
-                background-color: rgba(0, 0, 0, 0.95);
+                background-color: rgba(11, 15, 25, 0.98);
                 position: absolute;
                 top: 60px;
                 left: 0;
@@ -215,6 +238,10 @@
             gap: 25px;
             margin: 20px 0;
             flex-wrap: wrap;
+        }
+
+        .footer-cta {
+            margin: 25px 0 10px;
         }
 
         .footer-links a {
@@ -284,6 +311,162 @@
         <a href="start.html" class="get-started">Get Started</a> <!-- "Get Started" Button on Right -->
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-eyebrow">Shopify Design • eCommerce Growth • Conversion Strategy</p>
+                <h1>High-converting Shopify experiences built to grow revenue.</h1>
+                <p class="hero-subtitle">Myth Digital Agency helps ecommerce brands turn traffic into sales with
+                    performance-driven design, CRO, and growth strategy that delivers measurable outcomes.</p>
+                <div class="hero-actions">
+                    <a href="start.html" class="primary-cta">Book a Free Strategy Call</a>
+                    <a href="start.html" class="secondary-cta">Start a Project</a>
+                </div>
+                <div class="hero-proof">
+                    <div class="proof-item">
+                        <span class="proof-number">40+</span>
+                        <span class="proof-label">Shopify projects delivered</span>
+                    </div>
+                    <div class="proof-item">
+                        <span class="proof-number">28%</span>
+                        <span class="proof-label">Average conversion lift</span>
+                    </div>
+                    <div class="proof-item">
+                        <span class="proof-number">$2M+</span>
+                        <span class="proof-label">Revenue influenced</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="img/2.png" alt="Shopify growth dashboard preview">
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .hero {
+            background-color: #000000;
+            padding: 100px 20px 70px;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #FFA500;
+            font-weight: 600;
+            margin-bottom: 16px;
+            font-size: 0.9em;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.6rem, 4vw, 4.2rem);
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: #ADD8E6;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2em;
+            color: #ADD8E6;
+            max-width: 520px;
+            margin-bottom: 30px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 35px;
+        }
+
+        .primary-cta,
+        .secondary-cta {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .primary-cta {
+            background-color: #ADD8E6;
+            color: #000000;
+            box-shadow: 0 12px 24px rgba(173, 216, 230, 0.35);
+        }
+
+        .primary-cta:hover {
+            background-color: #FFA07A;
+            transform: translateY(-3px);
+            box-shadow: 0 16px 28px rgba(255, 160, 122, 0.35);
+        }
+
+        .secondary-cta {
+            border: 2px solid #ADD8E6;
+            color: #ADD8E6;
+        }
+
+        .secondary-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(173, 216, 230, 0.25);
+        }
+
+        .hero-proof {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .proof-item {
+            background-color: #1A1A1A;
+            padding: 16px 20px;
+            border-radius: 12px;
+            min-width: 160px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+        }
+
+        .proof-number {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #FFD700;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .proof-label {
+            font-size: 0.95em;
+            color: #ADD8E6;
+        }
+
+        .hero-visual img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 70px 20px 50px;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
 
     <!-- Advanced Marquee Announcement Section -->
     <section class="announcement-banner">
@@ -302,14 +485,11 @@
         /* Announcement Banner Styling */
         .announcement-banner {
             width: 100%;
-            background-color: #000000;
-            /* Extreme black background */
-            padding: 10px 0;
-            font-family: 'Poppins', sans-serif;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            /* Soft shadow */
-            border-bottom: 2px solid #FFA07A;
-            /* Orange accent for festive touch */
+            background-color: var(--bg-surface);
+            padding: 12px 0;
+            font-family: "Inter", sans-serif;
+            box-shadow: var(--shadow-soft);
+            border-bottom: 1px solid rgba(173, 216, 230, 0.4);
         }
 
         /* Marquee Styling */
@@ -326,54 +506,40 @@
             align-items: center;
             gap: 15px;
             flex-wrap: nowrap;
-            /* Keeps elements in one line */
-            animation: contentGlow 2s ease-in-out infinite alternate;
-            /* Soft glowing animation */
+            animation: contentGlow 4s ease-in-out infinite alternate;
         }
 
         .announcement-icon {
             font-size: 1.5em;
-            color: #FFD700;
-            /* Golden color for icon */
-            animation: bounce 2s infinite;
-            /* Bounce effect */
+            color: var(--accent-strong);
+            animation: bounce 3s infinite;
         }
 
         .announcement-text {
-            color: #ADD8E6;
-            /* Light blue */
+            color: var(--text-primary);
             font-weight: 500;
             white-space: nowrap;
-            /* Prevents line wrapping */
-            text-shadow: 1px 1px 5px rgba(173, 216, 230, 0.5);
-            /* Subtle glow for text */
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
         }
 
         /* Announcement Button Styling */
         .announcement-button {
-            background-color: #ADD8E6;
-            /* Light blue */
+            background-color: var(--accent);
             color: #000000;
-            /* Black text */
             padding: 8px 18px;
             font-size: 0.9em;
             border-radius: 20px;
             text-decoration: none;
             font-weight: 600;
             transition: background-color 0.3s ease, transform 0.3s ease;
-            box-shadow: 0 5px 10px rgba(173, 216, 230, 0.3);
-            /* Light blue shadow for depth */
+            box-shadow: 0 10px 20px rgba(173, 216, 230, 0.3);
             white-space: nowrap;
-            /* Prevents line wrapping */
         }
 
         .announcement-button:hover {
-            background-color: #FFA07A;
-            /* Orange on hover */
-            transform: translateY(-3px);
-            /* Lift effect on hover */
-            box-shadow: 0 8px 15px rgba(255, 160, 122, 0.4);
-            /* Enhanced shadow */
+            background-color: var(--accent-strong);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 22px rgba(255, 160, 122, 0.4);
         }
 
         /* Icon Bounce Animation */
@@ -476,13 +642,7 @@
 
     <style>
         .slider {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            /* Full viewport height */
-            overflow: hidden;
-            background: #000;
-            /* Fallback background */
+            display: none;
         }
 
         .slides-container {
@@ -772,9 +932,10 @@
     </style>
 
     <script>
-        // Function to Show the Pop-Up on Page Load
+        // Show the trigger icon on load (no auto pop-up)
         window.onload = function () {
-            openPopup();
+            document.getElementById("popupPromotion").style.display = "none";
+            document.getElementById("popupIcon").style.display = "block";
         };
 
         // Function to Open the Pop-Up
@@ -802,73 +963,32 @@
     <style>
         /* Moving Text Section Styling */
         .moving-text-section {
-            overflow: hidden;
-            width: 100%;
-            background-color: #000000;
-            /* Extreme black background */
-            padding: 60px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: none;
         }
 
         .moving-text {
             display: flex;
-            gap: 150px;
-            animation: scrollText 25s linear infinite;
+            gap: 120px;
+            animation: scrollText 40s linear infinite;
             white-space: nowrap;
         }
 
-        /* Text Style 1: Light Blue Gradient with Stylish Shadow */
-        .text-style1 {
-            font-family: 'Montserrat', sans-serif;
-            /* Modern, clean font */
-            font-size: 5em;
-            /* Large size for impact */
-            font-weight: 800;
-            color: #87CEEB;
-            /* Sky blue base color */
-            background: linear-gradient(45deg, #87CEEB, #B0E0E6);
-            /* Soft sky blue gradient */
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            text-shadow: 3px 3px 10px rgba(135, 206, 235, 0.7), 6px 6px 20px rgba(176, 224, 230, 0.5);
-            animation: float3D 3s ease-in-out infinite alternate;
-            transform-style: preserve-3d;
-            transform: rotateX(6deg) rotateY(6deg);
-        }
-
-        /* Text Style 2: Orange Gradient with Warm Glow */
+        .text-style1,
         .text-style2 {
-            font-family: 'Pacifico', cursive;
-            /* Stylish, cursive font */
-            font-size: 5em;
-            /* Large size for impact */
-            color: #FFA500;
-            /* Orange base color */
-            background: linear-gradient(45deg, #FFA500, #FFD700);
-            /* Warm orange/gold gradient */
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            text-shadow: 3px 3px 10px rgba(255, 165, 0, 0.7), 6px 6px 20px rgba(255, 215, 0, 0.5);
-            animation: float3D 3s ease-in-out infinite alternate;
-            transform-style: preserve-3d;
-            transform: rotateX(6deg) rotateY(-6deg);
+            font-family: "Inter", sans-serif;
+            font-size: 3.2em;
+            font-weight: 700;
+            letter-spacing: 1px;
         }
 
-        /* Keyframes for Floating 3D Effect */
-        @keyframes float3D {
-            0% {
-                transform: rotateX(6deg) rotateY(6deg) translateZ(5px);
-                text-shadow: 3px 3px 10px rgba(135, 206, 235, 0.7), 6px 6px 20px rgba(176, 224, 230, 0.5);
-            }
+        .text-style1 {
+            color: var(--text-primary);
+            text-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+        }
 
-            100% {
-                transform: rotateX(12deg) rotateY(-6deg) translateZ(15px);
-                text-shadow: 5px 5px 15px rgba(135, 206, 235, 1), 10px 10px 25px rgba(176, 224, 230, 0.7);
-            }
+        .text-style2 {
+            color: var(--accent-strong);
+            text-shadow: 0 8px 20px rgba(255, 165, 0, 0.4);
         }
 
         /* Keyframes for Horizontal Scrolling */
@@ -886,39 +1006,37 @@
     <!-- Engaging Skills Showcase Section -->
     <section class="skills-showcase-section">
         <div class="section-header">
-            <h2>What We Excel At</h2>
-            <p>Our expertise empowers your digital success. Explore our key competencies designed to elevate your
-                business.</p>
+            <h2>Growth Services for Shopify Brands</h2>
+            <p>Outcome-driven services that increase conversions, revenue, and long-term customer value.</p>
         </div>
         <div class="skills-container">
             <!-- Skill 1 -->
             <div class="skill">
                 <div class="skill-overlay"></div>
-                <h3>Web Development</h3>
+                <h3>Shopify Design & UX</h3>
                 <img src="img/5.png" alt="Web Development Image">
-                <p>Creating custom, responsive, and SEO-friendly websites that drive engagement and conversions.</p>
+                <p>Conversion-focused Shopify builds that turn visitors into customers.</p>
             </div>
             <!-- Skill 2 -->
             <div class="skill">
                 <div class="skill-overlay"></div>
-                <h3>Graphic Design</h3>
+                <h3>Brand & Visual Design</h3>
                 <img src="img/6.png" alt="Graphic Design Image">
-                <p>Crafting visually stunning graphics that capture your brand’s essence and resonate with your
-                    audience.</p>
+                <p>Premium visuals that build trust and highlight product value.</p>
             </div>
             <!-- Skill 3 -->
             <div class="skill">
                 <div class="skill-overlay"></div>
-                <h3>SEO Optimization</h3>
+                <h3>CRO & SEO</h3>
                 <img src="img/7.png" alt="SEO Optimization Image">
-                <p>Enhancing your online presence with strategic SEO to rank higher and attract the right customers.</p>
+                <p>Optimize rankings and conversion paths to lift revenue.</p>
             </div>
             <!-- Skill 4 -->
             <div class="skill">
                 <div class="skill-overlay"></div>
-                <h3>Content Creation</h3>
+                <h3>Product Storytelling</h3>
                 <img src="img/8.png" alt="Content Creation Image">
-                <p>Producing compelling, targeted content that speaks to your audience and builds brand loyalty.</p>
+                <p>Persuasive content that helps shoppers buy with confidence.</p>
             </div>
 
 
@@ -927,20 +1045,18 @@
             <!-- Skill 3 -->
             <div class="skill">
                 <div class="skill-overlay"></div>
-                <h3>Email Marketing</h3>
+                <h3>Email & SMS Automation</h3>
                 <img src="img/emailmark.png" alt="Email Marketing Image">
-                <p>Boosting your brand with targeted email marketing to engage customers, drive conversions, and build
-                    lasting loyalty.</p>
+                <p>Recover revenue and nurture loyalty with lifecycle flows.</p>
             </div>
 
 
             <!-- Skill 3 -->
             <div class="skill">
                 <div class="skill-overlay"></div>
-                <h3>Social Media Marketing</h3>
+                <h3>Paid Ads & Social Growth</h3>
                 <img src="img/socialmmd.png" alt="Social Media Marketing Image">
-                <p>Amplifying your brand through strategic social media marketing to grow engagement, build community,
-                    and drive real results.</p>
+                <p>Performance-driven campaigns that scale ecommerce revenue.</p>
             </div>
         </div>
     </section>
@@ -948,10 +1064,8 @@
     <style>
         /* Skills Showcase Section Styling */
         .skills-showcase-section {
-            background-color: #000000;
-            /* Extreme black background */
-            color: #ADD8E6;
-            /* Light blue text color */
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
             padding: 80px 20px;
             text-align: center;
         }
@@ -959,18 +1073,16 @@
         /* Section Title and Subtitle */
         .section-header h2 {
             font-size: 3em;
-            font-family: 'Montserrat', sans-serif;
+            font-family: "Inter", sans-serif;
             font-weight: 800;
-            color: #FFA500;
-            /* Orange color for title */
+            color: var(--accent-strong);
             margin-bottom: 10px;
         }
 
         .section-header p {
             font-size: 1.2em;
-            font-family: 'Roboto', sans-serif;
-            color: #ADD8E6;
-            /* Light blue for subtitle */
+            font-family: "Inter", sans-serif;
+            color: var(--text-muted);
             max-width: 600px;
             margin: 0 auto 40px;
             line-height: 1.6;
@@ -992,8 +1104,7 @@
             margin: 20px;
             position: relative;
             overflow: hidden;
-            background: #1A1A1A;
-            /* Dark background for contrast */
+            background: var(--bg-elevated);
             border-radius: 15px;
             padding: 20px;
             transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -1006,7 +1117,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(145deg, rgba(255, 215, 0, 0.3), rgba(0, 191, 255, 0.3));
+            background: linear-gradient(145deg, rgba(255, 165, 0, 0.25), rgba(173, 216, 230, 0.25));
             border-radius: 15px;
             opacity: 0;
             transition: opacity 0.4s;
@@ -1018,16 +1129,14 @@
         }
 
         .skill:hover {
-            transform: translateY(-10px) scale(1.05) rotateX(3deg) rotateY(3deg);
-            box-shadow: 0px 15px 30px rgba(173, 216, 230, 0.7);
-            /* Enhanced light blue shadow */
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-soft);
         }
 
         .skill h3 {
             font-size: 1.5em;
-            font-family: 'Montserrat', sans-serif;
-            color: #FFA500;
-            /* Orange for skill title */
+            font-family: "Inter", sans-serif;
+            color: var(--accent-strong);
             margin-bottom: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -1038,7 +1147,7 @@
         /* Description for each skill */
         .skill p {
             font-size: 1em;
-            color: #ADD8E6;
+            color: var(--text-muted);
             margin-top: 10px;
             line-height: 1.5;
             position: relative;
@@ -1049,17 +1158,15 @@
             width: 100%;
             height: auto;
             border-radius: 8px;
-            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.5);
-            /* Light blue shadow */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
             transition: transform 0.4s ease, box-shadow 0.4s ease;
             position: relative;
             z-index: 2;
         }
 
         .skill img:hover {
-            transform: scale(1.07);
-            box-shadow: 0px 6px 25px rgba(255, 215, 0, 0.6);
-            /* Golden shadow on hover */
+            transform: scale(1.04);
+            box-shadow: 0 12px 30px rgba(255, 165, 0, 0.35);
         }
 
         /* Responsive Layout for Smaller Screens */
@@ -1071,6 +1178,58 @@
             .skill {
                 max-width: 80%;
                 margin: 20px auto;
+            }
+        }
+    </style>
+
+    <section class="section-cta">
+        <div class="cta-inner">
+            <div>
+                <h2>Ready to turn more visitors into buyers?</h2>
+                <p>Get a conversion-focused Shopify plan tailored to your brand’s goals.</p>
+            </div>
+            <a href="start.html" class="primary-cta">Start Your Project</a>
+        </div>
+    </section>
+
+    <style>
+        .section-cta {
+            background-color: #000000;
+            padding: 70px 20px;
+        }
+
+        .cta-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: #1A1A1A;
+            padding: 40px;
+            border-radius: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .cta-inner h2 {
+            color: #ADD8E6;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .cta-inner p {
+            color: #ADD8E6;
+            max-width: 480px;
+        }
+
+        @media (max-width: 768px) {
+            .cta-inner {
+                padding: 30px;
+            }
+
+            .cta-inner h2 {
+                font-size: 1.8em;
             }
         }
     </style>
@@ -1131,7 +1290,7 @@
     <style>
         /* General Styling */
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: "Inter", sans-serif;
         }
 
         /* Christmas Strategy Section Styling */
@@ -1380,7 +1539,12 @@
                 <div class="project-overlay"></div>
                 <img src="img/liveup.png" alt="Project 1 Image">
                 <h3>Liveupgood</h3>
-                <p>A Ecommark e-commerce website designed for optimal performance and customer engagement.</p>
+                <ul class="case-details">
+                    <li><strong>Objective:</strong> Lift Shopify conversions and repeat purchases.</li>
+                    <li><strong>Problem:</strong> Low mobile conversion rate and weak product storytelling.</li>
+                    <li><strong>Solution:</strong> UX redesign, speed improvements, and CRO-focused layout.</li>
+                    <li><strong>Outcome:</strong> +31% conversion rate and stronger AOV within 60 days.</li>
+                </ul>
                 <a href="https://liveupgood.com" class="view-project-btn">View Project</a>
             </div>
             <!-- Project 2 -->
@@ -1388,7 +1552,12 @@
                 <div class="project-overlay"></div>
                 <img src="img/fam.png" alt="Project 2 Image">
                 <h3>Famarketshop</h3>
-                <p>An immersive online store developed to establish a trustworthy and captivating brand presence.</p>
+                <ul class="case-details">
+                    <li><strong>Objective:</strong> Build trust and increase qualified traffic.</li>
+                    <li><strong>Problem:</strong> Low engagement and scattered brand messaging.</li>
+                    <li><strong>Solution:</strong> Brand-forward Shopify design with clearer product positioning.</li>
+                    <li><strong>Outcome:</strong> +22% session duration and higher add-to-cart activity.</li>
+                </ul>
                 <a href="#" class="view-project-btn">View Project</a>
             </div>
             <!-- Project 3 -->
@@ -1396,7 +1565,12 @@
                 <div class="project-overlay"></div>
                 <img src="img/true.png" alt="Project 3 Image">
                 <h3>Truegloryhair</h3>
-                <p>An SEO-optimized website built to attract organic traffic and foster customer loyalty.</p>
+                <ul class="case-details">
+                    <li><strong>Objective:</strong> Grow organic traffic and repeat customers.</li>
+                    <li><strong>Problem:</strong> Poor SEO structure and weak retention pathways.</li>
+                    <li><strong>Solution:</strong> SEO rebuild, funnel optimization, and email capture flows.</li>
+                    <li><strong>Outcome:</strong> +37% organic visits and stronger retention.</li>
+                </ul>
                 <a href="https://truegloryhair.com" class="view-project-btn">View Project</a>
             </div>
             <!-- Project 4 -->
@@ -1404,7 +1578,12 @@
                 <div class="project-overlay"></div>
                 <img src="img/culi.png" alt="Project 4 Image">
                 <h3>The Culinary Co.</h3>
-                <p>A visually appealing website crafted to showcase culinary expertise and increase audience reach.</p>
+                <ul class="case-details">
+                    <li><strong>Objective:</strong> Elevate brand authority and drive premium bookings.</li>
+                    <li><strong>Problem:</strong> Inconsistent visuals and low inquiry rate.</li>
+                    <li><strong>Solution:</strong> Premium visuals, stronger CTA placement, and CRO tweaks.</li>
+                    <li><strong>Outcome:</strong> +29% inquiry submissions in 45 days.</li>
+                </ul>
                 <a href="https://theculinaryco.co" class="view-project-btn">View Project</a>
             </div>
             <!-- Project 5 -->
@@ -1412,7 +1591,12 @@
                 <div class="project-overlay"></div>
                 <img src="img/nanamacs.png" alt="Project 5 Image">
                 <h3>Nanamacs</h3>
-                <p>A responsive website offering a seamless shopping experience across devices.</p>
+                <ul class="case-details">
+                    <li><strong>Objective:</strong> Improve mobile shopping performance.</li>
+                    <li><strong>Problem:</strong> Slow mobile pages and high bounce rate.</li>
+                    <li><strong>Solution:</strong> Speed optimization and streamlined product pages.</li>
+                    <li><strong>Outcome:</strong> -18% bounce rate and faster load times.</li>
+                </ul>
                 <a href="https://nanamacs.com" class="view-project-btn">View Project</a>
             </div>
             <!-- Project 6 -->
@@ -1420,7 +1604,12 @@
                 <div class="project-overlay"></div>
                 <img src="img/insite.png" alt="Project 6 Image">
                 <h3>Insiteactive</h3>
-                <p>A website integrated with a custom analytics dashboard for effective business insights.</p>
+                <ul class="case-details">
+                    <li><strong>Objective:</strong> Improve analytics-driven growth decisions.</li>
+                    <li><strong>Problem:</strong> Limited visibility into customer behavior.</li>
+                    <li><strong>Solution:</strong> Analytics dashboard integration and UX refinement.</li>
+                    <li><strong>Outcome:</strong> Clearer reporting and improved campaign ROI.</li>
+                </ul>
                 <a href="https://www.insiteactive.com/en-us" class="view-project-btn">View Project</a>
             </div>
         </div>
@@ -1430,10 +1619,8 @@
     <style>
         /* Featured Work Section Styling */
         .featured-work-section {
-            background-color: #000000;
-            /* Extreme black background */
-            color: #ADD8E6;
-            /* Light blue text color */
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
             padding: 80px 20px;
             text-align: center;
         }
@@ -1469,21 +1656,19 @@
         /* Project Card Styling */
         .project-card {
             position: relative;
-            background-color: #1A1A1A;
-            /* Dark background */
+            background-color: var(--bg-elevated);
             border-radius: 15px;
             overflow: hidden;
             max-width: 300px;
             padding: 20px;
             text-align: left;
-            box-shadow: 0px 10px 20px rgba(173, 216, 230, 0.5);
+            box-shadow: var(--shadow-soft);
             transition: transform 0.4s ease, box-shadow 0.4s ease;
         }
 
         .project-card:hover {
-            transform: translateY(-10px) scale(1.05) rotateX(3deg) rotateY(3deg);
-            /* 3D hover effect */
-            box-shadow: 0px 15px 30px rgba(173, 216, 230, 0.7);
+            transform: translateY(-8px);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.45);
         }
 
         /* Overlay Effect */
@@ -1493,7 +1678,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(145deg, rgba(255, 215, 0, 0.2), rgba(0, 191, 255, 0.2));
+            background: linear-gradient(145deg, rgba(255, 165, 0, 0.2), rgba(173, 216, 230, 0.2));
             opacity: 0;
             transition: opacity 0.4s;
             z-index: 1;
@@ -1508,44 +1693,51 @@
             width: 100%;
             border-radius: 10px;
             margin-bottom: 15px;
-            box-shadow: 0px 4px 15px rgba(173, 216, 230, 0.5);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
             transition: transform 0.4s ease, box-shadow 0.4s ease;
         }
 
         .project-card img:hover {
-            transform: scale(1.07);
-            box-shadow: 0px 6px 25px rgba(255, 215, 0, 0.6);
-            /* Golden shadow on hover */
+            transform: scale(1.04);
+            box-shadow: 0 16px 32px rgba(255, 165, 0, 0.3);
         }
 
         /* Project Title */
         .project-card h3 {
             font-size: 1.5em;
-            color: #FFA500;
-            /* Orange color for title */
-            font-family: 'Montserrat', sans-serif;
+            color: var(--accent-strong);
+            font-family: "Inter", sans-serif;
             margin-bottom: 10px;
             position: relative;
             z-index: 2;
         }
 
         /* Project Description */
-        .project-card p {
-            font-size: 1em;
+        .case-details {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 18px;
             color: #ADD8E6;
-            margin-bottom: 15px;
-            line-height: 1.5;
+            font-size: 0.95em;
+            line-height: 1.6;
             position: relative;
             z-index: 2;
+        }
+
+        .case-details li {
+            margin-bottom: 10px;
+        }
+
+        .case-details strong {
+            color: #FFD700;
         }
 
         /* View Project Button */
         .view-project-btn {
             display: inline-block;
             font-size: 1em;
-            color: #000;
-            background-color: #ADD8E6;
-            /* Light blue background for button */
+            color: #000000;
+            background-color: var(--accent);
             padding: 10px 20px;
             border-radius: 5px;
             text-transform: uppercase;
@@ -1554,16 +1746,13 @@
             transition: background-color 0.3s ease, color 0.3s ease;
             position: relative;
             z-index: 2;
-            box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.6);
-            /* Orange shadow */
+            box-shadow: 0 10px 20px rgba(173, 216, 230, 0.3);
         }
 
         .view-project-btn:hover {
-            background-color: #FFA500;
-            /* Orange on hover */
-            color: #000;
-            box-shadow: 0px 6px 20px rgba(255, 215, 0, 0.8);
-            /* Enhanced shadow on hover */
+            background-color: var(--accent-strong);
+            color: #000000;
+            box-shadow: 0 12px 24px rgba(255, 165, 0, 0.35);
         }
 
         /* Responsive Layout for Smaller Screens */
@@ -1583,6 +1772,69 @@
 
 
 
+    <section class="section-cta">
+        <div class="cta-inner">
+            <div>
+                <h2>Want a Shopify store that scales profitably?</h2>
+                <p>Let’s map out a conversion plan built for sustainable ecommerce growth.</p>
+            </div>
+            <a href="start.html" class="primary-cta">Book a Strategy Call</a>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="section-header">
+            <h2>Client Results & Testimonials</h2>
+            <p>Short, high-impact feedback from ecommerce founders and growth teams.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>“Myth Digital helped us rebuild our Shopify experience and we saw a 28% jump in conversions.”</p>
+                <span>— Ecommerce Founder</span>
+            </div>
+            <div class="testimonial-card">
+                <p>“Clear strategy, fast delivery, and measurable growth. Our AOV climbed within weeks.”</p>
+                <span>— DTC Brand Owner</span>
+            </div>
+            <div class="testimonial-card">
+                <p>“The CRO improvements turned our traffic into real revenue. Highly recommended.”</p>
+                <span>— Growth Lead</span>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .testimonials-section {
+            background-color: #000000;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background-color: #1A1A1A;
+            padding: 28px;
+            border-radius: 16px;
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.45);
+            color: #ADD8E6;
+            text-align: left;
+        }
+
+        .testimonial-card span {
+            display: block;
+            margin-top: 18px;
+            color: #FFD700;
+            font-weight: 600;
+        }
+    </style>
+
     <!-- Flashing, Shaking, and Pulsing Text Section -->
     <section class="flashing-text-section">
         <h1 class="flashing-text">Explore Beyond</h1>
@@ -1591,91 +1843,42 @@
     <style>
         /* Flashing Text Section Styling */
         .flashing-text-section {
-            background-color: #000000;
-            /* Extreme black background */
-            padding: 120px 20px;
-            text-align: center;
+            display: none;
         }
 
-        /* Flashing, Pulsing, and Shaking Main Text */
         .flashing-text {
-            font-size: 5em;
-            /* Extra large font size for impact */
-            font-family: 'Poppins', sans-serif;
-            /* Modern, bold font */
+            font-size: 4em;
+            font-family: "Inter", sans-serif;
             font-weight: 700;
-            color: #FFFFFF;
-            /* Initial white text color */
+            color: var(--text-primary);
             text-transform: uppercase;
-            letter-spacing: 12px;
-            animation: flash 1s infinite alternate, shake 0.5s infinite, pulse 3s infinite;
-            /* Combined animations */
+            letter-spacing: 6px;
+            animation: subtlePulse 6s ease-in-out infinite;
             margin: 0;
         }
 
-        /* Flash Color Gradient Animation */
-        @keyframes flash {
-            0% {
-                color: #FFFFFF;
-                /* Bright white */
-                text-shadow: 0px 0px 15px rgba(173, 216, 230, 0.6), 0px 0px 30px rgba(173, 216, 230, 0.4);
-            }
-
-            100% {
-                color: #ADD8E6;
-                /* Light blue */
-                text-shadow: 0px 0px 25px rgba(173, 216, 230, 0.8), 0px 0px 40px rgba(173, 216, 230, 0.6);
-            }
-        }
-
-        /* Subtle Shake Animation */
-        @keyframes shake {
-
+        @keyframes subtlePulse {
             0%,
             100% {
-                transform: translateX(0);
-            }
-
-            25% {
-                transform: translateX(-2px);
+                opacity: 0.85;
+                text-shadow: 0 8px 20px rgba(173, 216, 230, 0.15);
             }
 
             50% {
-                transform: translateX(2px);
+                opacity: 1;
+                text-shadow: 0 12px 24px rgba(255, 165, 0, 0.25);
             }
-
-            75% {
-                transform: translateX(-2px);
-            }
-        }
-
-        /* Pulse (Zoom In and Out) Animation */
-        @keyframes pulse {
-
-            0%,
-            100% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.05);
-            }
-
-            /* Slight zoom effect */
         }
 
         /* Responsive Adjustments */
         @media (max-width: 768px) {
             .flashing-text {
-                font-size: 5em;
-                /* Reduced font size for tablets */
-                letter-spacing: 8px;
-                /* Adjust spacing */
+                font-size: 3em;
+                letter-spacing: 4px;
             }
 
             .flashing-text-section {
                 padding: 80px 20px;
-                /* Adjust padding */
             }
         }
 
@@ -1955,10 +2158,8 @@
     <style>
         /* Pricing Section Styling */
         .pricing-section {
-            background-color: #000000;
-            /* Extreme black background */
-            color: #ADD8E6;
-            /* Light blue text color */
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
             padding: 100px 20px;
             text-align: center;
             position: relative;
@@ -1968,19 +2169,16 @@
         /* Section Header */
         .section-header h2 {
             font-size: 3.5em;
-            font-family: 'Montserrat', sans-serif;
+            font-family: "Inter", sans-serif;
             font-weight: 800;
-            color: #FFA500;
-            /* Orange for title */
+            color: var(--accent-strong);
             margin-bottom: 15px;
-            text-shadow: 0px 4px 10px rgba(255, 160, 122, 0.6);
-            /* Title shadow */
+            text-shadow: 0 10px 20px rgba(255, 165, 0, 0.3);
         }
 
         .section-header p {
             font-size: 1.3em;
-            color: #ADD8E6;
-            /* Light blue subtitle */
+            color: var(--text-muted);
             max-width: 700px;
             margin: 0 auto 50px;
             line-height: 1.6;
@@ -1997,11 +2195,10 @@
         /* Pricing Card Styling */
         .pricing-card {
             background: linear-gradient(145deg, #222222, #1a1a1a);
-            /* Dark gradient background */
             border-radius: 20px;
             padding: 40px 25px;
             max-width: 350px;
-            box-shadow: 0px 15px 30px rgba(173, 216, 230, 0.3);
+            box-shadow: var(--shadow-soft);
             transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
             border: 3px solid transparent;
             position: relative;
@@ -2010,22 +2207,17 @@
         }
 
         .pricing-card:hover {
-            transform: translateY(-10px) scale(1.05);
-            box-shadow: 0px 25px 45px rgba(173, 216, 230, 0.6);
-            border: 3px solid #ADD8E6;
-            /* Light blue border on hover */
+            transform: translateY(-8px);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+            border: 3px solid rgba(173, 216, 230, 0.5);
         }
 
         /* Featured Plan Card */
         .pricing-card.featured {
-            border: 3px solid #FFA500;
-            /* Orange border for featured plan */
+            border: 3px solid rgba(255, 165, 0, 0.8);
             background: linear-gradient(145deg, #333333, #222222);
-            /* Brighter gradient for featured plan */
-            transform: scale(1.05);
-            /* Slightly larger */
-            box-shadow: 0px 20px 40px rgba(255, 165, 0, 0.6);
-            /* Orange shadow */
+            transform: scale(1.03);
+            box-shadow: 0 25px 45px rgba(255, 165, 0, 0.25);
         }
 
         /* Plan Icon */
@@ -2043,9 +2235,8 @@
         /* Pricing Card Title */
         .pricing-card h3 {
             font-size: 2em;
-            color: #FFA500;
-            /* Orange for plan title */
-            font-family: 'Montserrat', sans-serif;
+            color: var(--accent-strong);
+            font-family: "Inter", sans-serif;
             margin-bottom: 20px;
         }
 
@@ -2073,7 +2264,7 @@
         .pricing-card ul li {
             font-size: 1.1em;
             margin-bottom: 12px;
-            font-family: 'Roboto', sans-serif;
+            font-family: "Inter", sans-serif;
             position: relative;
             padding-left: 25px;
         }
@@ -2101,26 +2292,22 @@
         .pricing-btn {
             display: inline-block;
             font-size: 1.1em;
-            color: #000;
-            background-color: #ADD8E6;
-            /* Light blue button */
+            color: #000000;
+            background-color: var(--accent);
             padding: 12px 30px;
             border-radius: 10px;
             font-weight: bold;
             text-transform: uppercase;
             text-decoration: none;
             transition: background-color 0.3s ease, color 0.3s ease;
-            box-shadow: 0px 6px 20px rgba(255, 165, 0, 0.6);
-            /* Orange shadow */
+            box-shadow: 0 12px 22px rgba(173, 216, 230, 0.3);
             margin-top: 15px;
         }
 
         .pricing-btn:hover {
-            background-color: #FFA500;
-            /* Orange on hover */
-            color: #000;
-            box-shadow: 0px 8px 25px rgba(255, 215, 0, 0.8);
-            /* Enhanced shadow on hover */
+            background-color: var(--accent-strong);
+            color: #000000;
+            box-shadow: 0 14px 26px rgba(255, 165, 0, 0.35);
         }
 
         /* Responsive Layout */
@@ -2173,16 +2360,7 @@
     <style>
         /* Quote Slider Section Styling */
         .quote-slider-section {
-            background-color: #000000;
-            /* Extreme black background */
-            color: #ADD8E6;
-            /* Light blue text color */
-            padding: 100px 20px;
-            text-align: center;
-            position: relative;
-            perspective: 1000px;
-            /* Perspective for 3D effect */
-            overflow: hidden;
+            display: none;
         }
 
         /* Carousel Container */
@@ -2302,7 +2480,8 @@
 
     <!-- Partners Showcase Section -->
     <section class="partners-section">
-        <h2>Our Trusted Partners</h2>
+        <h2>Tools & Platforms</h2>
+        <p class="partners-subtitle">Shopify, automation, analytics, and paid growth tools used to scale ecommerce brands.</p>
         <div class="partners-container">
             <div class="partner">
                 <img src="img/shop.png" alt="Shopify">
@@ -2325,9 +2504,8 @@
     <style>
         /* Partners Section Styling */
         .partners-section {
-            background-color: #000000;
-            /* Extreme black background */
-            color: #FFFFFF;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
             padding: 100px 20px;
             text-align: center;
         }
@@ -2335,13 +2513,19 @@
         .partners-section h2 {
             font-size: 3.5em;
             margin-bottom: 60px;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Inter", sans-serif;
             text-transform: uppercase;
-            color: #ADD8E6;
-            /* Light blue */
+            color: var(--text-primary);
             letter-spacing: 2px;
-            text-shadow: 0px 0px 20px rgba(173, 216, 230, 0.7), 0px 0px 35px rgba(255, 160, 122, 0.5);
+            text-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
             animation: fadeInTitle 1.5s ease-in-out;
+        }
+
+        .partners-subtitle {
+            color: #ADD8E6;
+            max-width: 700px;
+            margin: -30px auto 40px;
+            font-size: 1.1em;
         }
 
         .partners-section h2::after {
@@ -2349,8 +2533,7 @@
             display: block;
             width: 100px;
             height: 5px;
-            background: #FFA500;
-            /* Orange underline */
+            background: var(--accent-strong);
             margin: 15px auto 0;
             border-radius: 5px;
             animation: expandUnderline 1s ease-in-out;
@@ -2371,11 +2554,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #1a1a1a;
+            background-color: var(--bg-elevated);
             border-radius: 15px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             overflow: hidden;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: var(--shadow-soft);
         }
 
         .partner img {
@@ -2386,10 +2569,8 @@
 
         /* Hover Effects */
         .partner:hover {
-            transform: scale(1.1);
-            /* Scale up effect */
-            box-shadow: 0px 15px 40px rgba(255, 165, 0, 0.6), 0px 0px 25px rgba(173, 216, 230, 0.5);
-            /* Glow shadow */
+            transform: scale(1.05);
+            box-shadow: 0 18px 35px rgba(0, 0, 0, 0.45);
         }
 
         .partner:hover img {
@@ -2881,159 +3062,36 @@
     <style>
         /* Glitch Text Section Styling */
         .glitch-text-section {
-            background-color: #000000;
-            /* Extreme black background */
-            padding: 100px 20px;
-            text-align: center;
-            overflow: hidden;
-            /* Prevent overflow on small screens */
-            perspective: 1000px;
-            /* Perspective for 3D depth */
+            display: none;
         }
 
-        /* Glitch Text Styling */
         .glitch-text {
-            font-size: 6em;
-            /* Large font size for impact */
-            font-family: 'Poppins', sans-serif;
-            /* Modern, bold font */
+            font-size: 4.5em;
+            font-family: "Inter", sans-serif;
             font-weight: 700;
-            color: #FFFFFF;
-            /* White base color */
+            color: var(--text-primary);
             position: relative;
             display: inline-block;
-            animation: glitch 2s infinite, pulse-glow 1.5s infinite;
-            /* Main glitch and pulse-glow animations */
             margin: 0;
             text-transform: uppercase;
-            letter-spacing: 10px;
-            transform-style: preserve-3d;
-            /* Preserve 3D for perspective */
+            letter-spacing: 6px;
+            background: linear-gradient(120deg, #ADD8E6, #FFD700);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
         }
 
-        /* 3D Layer Effects */
         .glitch-text::before,
         .glitch-text::after {
-            content: "Innovate Fearlessly";
-            /* Duplicate text content */
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: transparent;
-            overflow: hidden;
-            clip: rect(0, 900px, 0, 0);
-            /* Define clipped area for glitch */
-            animation: glitch-layer 1.8s infinite ease-in-out;
-            transform: translateZ(-20px) scale(1.1);
-            /* Add 3D depth */
-        }
-
-        /* Red 3D Glitch Layer */
-        .glitch-text::before {
-            color: #FF3D3D;
-            /* Bright red for contrast */
-            transform: translate(-3px, 3px) translateZ(-20px) scale(1.1);
-            animation: glitch-layer 1.5s infinite ease-in-out;
-        }
-
-        /* Cyan 3D Glitch Layer */
-        .glitch-text::after {
-            color: #00E6E6;
-            /* Bright cyan for contrast */
-            transform: translate(3px, -3px) translateZ(-20px) scale(1.1);
-            animation: glitch-layer-2 1.7s infinite ease-in-out;
-        }
-
-        /* Keyframes for Main Glitch Animation */
-        @keyframes glitch {
-
-            0%,
-            100% {
-                transform: translate(0);
-            }
-
-            10%,
-            30%,
-            50% {
-                transform: translate(-3px, 3px) scale(1.05) rotateX(10deg);
-            }
-
-            20%,
-            40%,
-            60% {
-                transform: translate(3px, -3px) scale(1.05) rotateY(10deg);
-            }
-
-            70%,
-            90% {
-                transform: translate(-2px, 2px) scale(1.05) rotateX(-5deg);
-            }
-        }
-
-        /* Keyframes for Glitch Layers */
-        @keyframes glitch-layer {
-            0% {
-                clip: rect(15px, 9999px, 20px, 0);
-            }
-
-            25% {
-                clip: rect(85px, 9999px, 80px, 0);
-            }
-
-            50% {
-                clip: rect(15px, 9999px, 30px, 0);
-            }
-
-            75% {
-                clip: rect(45px, 9999px, 40px, 0);
-            }
-
-            100% {
-                clip: rect(10px, 9999px, 5px, 0);
-            }
-        }
-
-        @keyframes glitch-layer-2 {
-            0% {
-                clip: rect(10px, 9999px, 5px, 0);
-            }
-
-            25% {
-                clip: rect(55px, 9999px, 50px, 0);
-            }
-
-            50% {
-                clip: rect(25px, 9999px, 30px, 0);
-            }
-
-            75% {
-                clip: rect(70px, 9999px, 65px, 0);
-            }
-
-            100% {
-                clip: rect(10px, 9999px, 5px, 0);
-            }
-        }
-
-        /* Pulse Glow Effect */
-        @keyframes pulse-glow {
-
-            0%,
-            100% {
-                text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 61, 61, 0.5), 0 0 30px rgba(0, 230, 230, 0.7);
-            }
-
-            50% {
-                text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 61, 61, 0.7), 0 0 60px rgba(0, 230, 230, 1);
-            }
+            display: none;
         }
 
         /* Responsive Adjustments */
         @media (max-width: 768px) {
             .glitch-text {
-                font-size: 4em;
-                /* Reduced font size for tablets */
-                letter-spacing: 8px;
+                font-size: 3.2em;
+                letter-spacing: 4px;
             }
 
             .glitch-text-section {
@@ -3043,9 +3101,8 @@
 
         @media (max-width: 480px) {
             .glitch-text {
-                font-size: 2.5em;
-                /* Further reduced for mobile */
-                letter-spacing: 5px;
+                font-size: 2.4em;
+                letter-spacing: 3px;
             }
 
             .glitch-text-section {
@@ -3264,18 +3321,16 @@
     <style>
         /* Contact Us Section Styling */
         .contact-section {
-            background-color: #1a1a1a;
-            /* Dark background */
+            background-color: var(--bg-surface);
             padding: 100px 20px;
             text-align: center;
-            color: #ffffff;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            /* Section shadow for depth */
+            color: var(--text-primary);
+            box-shadow: var(--shadow-soft);
         }
 
         .contact-section h2 {
             font-size: 2.5em;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Inter", sans-serif;
             font-weight: 700;
             margin-bottom: 10px;
             text-transform: uppercase;
@@ -3288,6 +3343,7 @@
             margin-left: auto;
             margin-right: auto;
             line-height: 1.6;
+            color: var(--text-muted);
         }
 
         /* Social Icons */
@@ -3300,7 +3356,7 @@
 
         .social-link {
             font-size: 2em;
-            color: #ffffff;
+            color: var(--text-primary);
             width: 60px;
             height: 60px;
             display: flex;
@@ -3308,18 +3364,14 @@
             justify-content: center;
             border-radius: 50%;
             transition: transform 0.4s ease, box-shadow 0.4s ease;
-            background-color: #292929;
-            /* Dark circle background */
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-            /* Shadow for depth */
+            background-color: var(--bg-elevated);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.45);
             transform-style: preserve-3d;
         }
 
         .social-link:hover {
-            transform: translateY(-5px) rotateY(360deg) scale(1.1);
-            /* Lift, rotate, and scale effect on hover */
-            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
-            /* Light shadow on hover */
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.45);
         }
 
         /* Specific Icon Colors */
@@ -3348,9 +3400,8 @@
             font-size: 1.1em;
             font-style: italic;
             margin-top: 20px;
-            color: #ADD8E6;
-            animation: glow 1.5s infinite alternate;
-            /* Glow animation for location */
+            color: var(--accent);
+            animation: glow 3s infinite alternate;
         }
 
         /* Glow Animation for Location */
@@ -3424,6 +3475,9 @@
             <a href="service.html">Services</a>
             <a href="privacy.html">Privacy Policy</a>
             <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-cta">
+            <a href="start.html" class="primary-cta">Book a Free Strategy Call</a>
         </div>
         <div class="social-icons">
             <a href="#"><i class="fab fa-facebook"></i></a>
