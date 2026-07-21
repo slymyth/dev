@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Majento Digital logo</title>
+  <desc id="desc">Blue Majento Digital logo with an M monogram arrow and service tagline.</desc>
+  <defs>
+    <linearGradient id="mark" x1="280" y1="310" x2="720" y2="570" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#001735"/>
+      <stop offset="0.5" stop-color="#062b73"/>
+      <stop offset="1" stop-color="#1187ff"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="290" y1="0" x2="760" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#004bd8"/>
+      <stop offset="1" stop-color="#1195ff"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#031a36" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" fill="#fff"/>
+  <g filter="url(#softShadow)">
+    <path fill="url(#mark)" d="M335 220h73l121 128h20l196-146-22 67-164 132-47 47-104-113v186h-73z"/>
+    <path fill="url(#blue)" d="M688 297h73v224h-73v-126L535 521H435l253-224z"/>
+    <path fill="#1187ff" d="M704 198l91-27-35 87-17-39z"/>
+  </g>
+  <g fill="#001735" font-family="Montserrat, Poppins, Arial, sans-serif" text-anchor="middle">
+    <text x="512" y="662" font-size="134" font-weight="800" letter-spacing="29">MAJENTO</text>
+    <text x="512" y="742" font-size="47" font-weight="700" letter-spacing="38" fill="#106eea">DIGITAL</text>
+    <text x="512" y="808" font-size="21" font-weight="600" letter-spacing="9" fill="#303642">SHOPIFY EXPERTS  |  SEO &amp; AI VISIBILITY  |  CRO &amp; GROWTH</text>
+  </g>
+  <path d="M119 727h162M743 727h162" stroke="#106eea" stroke-width="3" stroke-linecap="round"/>
+</svg>
